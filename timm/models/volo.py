@@ -2,7 +2,7 @@
 
 Paper: `VOLO: Vision Outlooker for Visual Recognition` - https://arxiv.org/abs/2106.13112
 
-Code adapted from official impl at https://github.com/sail-sg/volo, original copyright in comment below
+Code adapted from official impl at https://mirror.ghproxy.com/https://github.com/sail-sg/volo, original copyright in comment below
 
 Modifications and additions for timm by / Copyright 2022, Ross Wightman
 """
@@ -295,7 +295,7 @@ def get_block(block_type, **kargs):
 
 def rand_bbox(size, lam, scale=1):
     """
-    get bounding box as token labeling (https://github.com/zihangJiang/TokenLabeling)
+    get bounding box as token labeling (https://mirror.ghproxy.com/https://github.com/zihangJiang/TokenLabeling)
     return: bounding box
     """
     W = size[1] // scale
@@ -752,47 +752,47 @@ def _cfg(url='', **kwargs):
 default_cfgs = generate_default_cfgs({
     'volo_d1_224.sail_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/sail-sg/volo/releases/download/volo_1/d1_224_84.2.pth.tar',
+        url='https://mirror.ghproxy.com/https://github.com/sail-sg/volo/releases/download/volo_1/d1_224_84.2.pth.tar',
         crop_pct=0.96),
     'volo_d1_384.sail_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/sail-sg/volo/releases/download/volo_1/d1_384_85.2.pth.tar',
+        url='https://mirror.ghproxy.com/https://github.com/sail-sg/volo/releases/download/volo_1/d1_384_85.2.pth.tar',
         crop_pct=1.0, input_size=(3, 384, 384)),
     'volo_d2_224.sail_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/sail-sg/volo/releases/download/volo_1/d2_224_85.2.pth.tar',
+        url='https://mirror.ghproxy.com/https://github.com/sail-sg/volo/releases/download/volo_1/d2_224_85.2.pth.tar',
         crop_pct=0.96),
     'volo_d2_384.sail_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/sail-sg/volo/releases/download/volo_1/d2_384_86.0.pth.tar',
+        url='https://mirror.ghproxy.com/https://github.com/sail-sg/volo/releases/download/volo_1/d2_384_86.0.pth.tar',
         crop_pct=1.0, input_size=(3, 384, 384)),
     'volo_d3_224.sail_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/sail-sg/volo/releases/download/volo_1/d3_224_85.4.pth.tar',
+        url='https://mirror.ghproxy.com/https://github.com/sail-sg/volo/releases/download/volo_1/d3_224_85.4.pth.tar',
         crop_pct=0.96),
     'volo_d3_448.sail_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/sail-sg/volo/releases/download/volo_1/d3_448_86.3.pth.tar',
+        url='https://mirror.ghproxy.com/https://github.com/sail-sg/volo/releases/download/volo_1/d3_448_86.3.pth.tar',
         crop_pct=1.0, input_size=(3, 448, 448)),
     'volo_d4_224.sail_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/sail-sg/volo/releases/download/volo_1/d4_224_85.7.pth.tar',
+        url='https://mirror.ghproxy.com/https://github.com/sail-sg/volo/releases/download/volo_1/d4_224_85.7.pth.tar',
         crop_pct=0.96),
     'volo_d4_448.sail_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/sail-sg/volo/releases/download/volo_1/d4_448_86.79.pth.tar',
+        url='https://mirror.ghproxy.com/https://github.com/sail-sg/volo/releases/download/volo_1/d4_448_86.79.pth.tar',
         crop_pct=1.15, input_size=(3, 448, 448)),
     'volo_d5_224.sail_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/sail-sg/volo/releases/download/volo_1/d5_224_86.10.pth.tar',
+        url='https://mirror.ghproxy.com/https://github.com/sail-sg/volo/releases/download/volo_1/d5_224_86.10.pth.tar',
         crop_pct=0.96),
     'volo_d5_448.sail_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/sail-sg/volo/releases/download/volo_1/d5_448_87.0.pth.tar',
+        url='https://mirror.ghproxy.com/https://github.com/sail-sg/volo/releases/download/volo_1/d5_448_87.0.pth.tar',
         crop_pct=1.15, input_size=(3, 448, 448)),
     'volo_d5_512.sail_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/sail-sg/volo/releases/download/volo_1/d5_512_87.07.pth.tar',
+        url='https://mirror.ghproxy.com/https://github.com/sail-sg/volo/releases/download/volo_1/d5_512_87.07.pth.tar',
         crop_pct=1.15, input_size=(3, 512, 512)),
 })
 
