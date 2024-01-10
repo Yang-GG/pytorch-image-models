@@ -10,7 +10,7 @@ Paper: `LeViT: a Vision Transformer in ConvNet's Clothing for Faster Inference`
   year={2021}
 }
 
-Adapted from official impl at https://github.com/facebookresearch/LeViT, original copyright bellow.
+Adapted from official impl at https://mirror.ghproxy.com/https://github.com/facebookresearch/LeViT, original copyright bellow.
 
 This version combines both conv/linear models and fixes torchscript compatibility.
 
@@ -21,7 +21,7 @@ Modifications and additions for timm hacked together by / Copyright 2021, Ross W
 # All rights reserved.
 
 # Modified from
-# https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/vision_transformer.py
+# https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/vision_transformer.py
 # Copyright 2020 Ross Wightman, Apache-2.0 License
 from collections import OrderedDict
 from functools import partial

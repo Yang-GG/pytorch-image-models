@@ -11,7 +11,7 @@ Global Context Vision Transformers -https://arxiv.org/abs/2206.09959
   year={2022}
 }
 
-Free of any code related to NVIDIA GCVit impl at https://github.com/NVlabs/GCVit.
+Free of any code related to NVIDIA GCVit impl at https://mirror.ghproxy.com/https://github.com/NVlabs/GCVit.
 The license for this code release is Apache 2.0 with no commercial restrictions.
 
 However, weight files adapted from NVIDIA GCVit impl ARE under a non-commercial share-alike license
@@ -529,15 +529,15 @@ def _cfg(url='', **kwargs):
 
 default_cfgs = generate_default_cfgs({
     'gcvit_xxtiny.in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-morevit/gcvit_xxtiny_224_nvidia-d1d86009.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-morevit/gcvit_xxtiny_224_nvidia-d1d86009.pth'),
     'gcvit_xtiny.in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-morevit/gcvit_xtiny_224_nvidia-274b92b7.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-morevit/gcvit_xtiny_224_nvidia-274b92b7.pth'),
     'gcvit_tiny.in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-morevit/gcvit_tiny_224_nvidia-ac783954.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-morevit/gcvit_tiny_224_nvidia-ac783954.pth'),
     'gcvit_small.in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-morevit/gcvit_small_224_nvidia-4e98afa2.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-morevit/gcvit_small_224_nvidia-4e98afa2.pth'),
     'gcvit_base.in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-morevit/gcvit_base_224_nvidia-f009139b.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-morevit/gcvit_base_224_nvidia-f009139b.pth'),
 })
 
 

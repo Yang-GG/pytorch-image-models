@@ -1,7 +1,7 @@
 """ Inception-V3
 
 Originally from torchvision Inception3 model
-Licensed BSD-Clause 3 https://github.com/pytorch/vision/blob/master/LICENSE
+Licensed BSD-Clause 3 https://mirror.ghproxy.com/https://github.com/pytorch/vision/blob/master/LICENSE
 """
 from functools import partial
 

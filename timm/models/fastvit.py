@@ -1,8 +1,8 @@
 # FastViT for PyTorch
 #
-# Original implementation and weights from https://github.com/apple/ml-fastvit
+# Original implementation and weights from https://mirror.ghproxy.com/https://github.com/apple/ml-fastvit
 #
-# For licensing see accompanying LICENSE file at https://github.com/apple/ml-fastvit/tree/main
+# For licensing see accompanying LICENSE file at https://mirror.ghproxy.com/https://github.com/apple/ml-fastvit/tree/main
 # Original work is copyright (C) 2023 Apple Inc. All Rights Reserved.
 #
 import os
@@ -193,7 +193,7 @@ class MobileOneBlock(nn.Module):
 
     def _get_kernel_bias(self) -> Tuple[torch.Tensor, torch.Tensor]:
         """Method to obtain re-parameterized kernel and bias.
-        Reference: https://github.com/DingXiaoH/RepVGG/blob/main/repvgg.py#L83
+        Reference: https://mirror.ghproxy.com/https://github.com/DingXiaoH/RepVGG/blob/main/repvgg.py#L83
 
         Returns:
             Tuple of (kernel, bias) after fusing branches.
@@ -230,7 +230,7 @@ class MobileOneBlock(nn.Module):
         self, branch: Union[nn.Sequential, nn.BatchNorm2d]
     ) -> Tuple[torch.Tensor, torch.Tensor]:
         """Method to fuse batchnorm layer with preceeding conv layer.
-        Reference: https://github.com/DingXiaoH/RepVGG/blob/main/repvgg.py#L95
+        Reference: https://mirror.ghproxy.com/https://github.com/DingXiaoH/RepVGG/blob/main/repvgg.py#L95
 
         Args:
             branch: Sequence of ops to be fused.
@@ -276,7 +276,7 @@ class ReparamLargeKernelConv(nn.Module):
     This class defines overparameterized large kernel conv block
     introduced in `RepLKNet <https://arxiv.org/abs/2203.06717>`_
 
-    Reference: https://github.com/DingXiaoH/RepLKNet-pytorch
+    Reference: https://mirror.ghproxy.com/https://github.com/DingXiaoH/RepLKNet-pytorch
     """
 
     def __init__(
@@ -357,7 +357,7 @@ class ReparamLargeKernelConv(nn.Module):
 
     def get_kernel_bias(self) -> Tuple[torch.Tensor, torch.Tensor]:
         """Method to obtain re-parameterized kernel and bias.
-        Reference: https://github.com/DingXiaoH/RepLKNet-pytorch
+        Reference: https://mirror.ghproxy.com/https://github.com/DingXiaoH/RepLKNet-pytorch
 
         Returns:
             Tuple of (kernel, bias) after fusing branches.
@@ -467,7 +467,7 @@ class Attention(nn.Module):
     """Multi-headed Self Attention module.
 
     Source modified from:
-    https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/vision_transformer.py
+    https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/vision_transformer.py
     """
     fused_attn: torch.jit.Final[bool]
 

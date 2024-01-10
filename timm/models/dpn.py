@@ -1,6 +1,6 @@
 """ PyTorch implementation of DualPathNetworks
-Based on original MXNet implementation https://github.com/cypw/DPNs with
-many ideas from another PyTorch implementation https://github.com/oyam/pytorch-DPNs.
+Based on original MXNet implementation https://mirror.ghproxy.com/https://github.com/cypw/DPNs with
+many ideas from another PyTorch implementation https://mirror.ghproxy.com/https://github.com/oyam/pytorch-DPNs.
 
 This implementation is compatible with the pretrained weights from cypw's MXNet implementation.
 

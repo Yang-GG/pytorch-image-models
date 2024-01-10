@@ -12,7 +12,7 @@ Paper: `RepViT: Revisiting Mobile CNN From ViT Perspective`
       primaryClass={cs.CV}
 }
 
-Adapted from official impl at https://github.com/jameslahm/RepViT
+Adapted from official impl at https://mirror.ghproxy.com/https://github.com/jameslahm/RepViT
 """
 
 __all__ = ['RepVit']

@@ -10,7 +10,7 @@
       primaryClass={cs.CV}
 }
 
-Based on Apache 2.0 licensed code at https://github.com/whai362/PVT
+Based on Apache 2.0 licensed code at https://mirror.ghproxy.com/https://github.com/whai362/PVT
 
 Modifications and timm support by / Copyright 2022, Ross Wightman
 """

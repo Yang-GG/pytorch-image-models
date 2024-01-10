@@ -1,7 +1,7 @@
 """RegNet X, Y, Z, and more
 
 Paper: `Designing Network Design Spaces` - https://arxiv.org/abs/2003.13678
-Original Impl: https://github.com/facebookresearch/pycls/blob/master/pycls/models/regnet.py
+Original Impl: https://mirror.ghproxy.com/https://github.com/facebookresearch/pycls/blob/master/pycls/models/regnet.py
 
 Paper: `Fast and Accurate Model Scaling` - https://arxiv.org/abs/2103.06877
 Original Impl: None
@@ -372,7 +372,7 @@ class RegNet(nn.Module):
     """RegNet-X, Y, and Z Models
 
     Paper: https://arxiv.org/abs/2003.13678
-    Original Impl: https://github.com/facebookresearch/pycls/blob/master/pycls/models/regnet.py
+    Original Impl: https://mirror.ghproxy.com/https://github.com/facebookresearch/pycls/blob/master/pycls/models/regnet.py
     """
 
     def __init__(
@@ -694,7 +694,7 @@ def _cfgpyc(url='', **kwargs):
         'crop_pct': 0.875, 'interpolation': 'bicubic',
         'mean': IMAGENET_DEFAULT_MEAN, 'std': IMAGENET_DEFAULT_STD,
         'first_conv': 'stem.conv', 'classifier': 'head.fc',
-        'license': 'mit', 'origin_url': 'https://github.com/facebookresearch/pycls', **kwargs
+        'license': 'mit', 'origin_url': 'https://mirror.ghproxy.com/https://github.com/facebookresearch/pycls', **kwargs
     }
 
 
@@ -704,7 +704,7 @@ def _cfgtv2(url='', **kwargs):
         'crop_pct': 0.965, 'interpolation': 'bicubic',
         'mean': IMAGENET_DEFAULT_MEAN, 'std': IMAGENET_DEFAULT_STD,
         'first_conv': 'stem.conv', 'classifier': 'head.fc',
-        'license': 'bsd-3-clause', 'origin_url': 'https://github.com/pytorch/vision', **kwargs
+        'license': 'bsd-3-clause', 'origin_url': 'https://mirror.ghproxy.com/https://github.com/pytorch/vision', **kwargs
     }
 
 
@@ -712,16 +712,16 @@ default_cfgs = generate_default_cfgs({
     # timm trained models
     'regnety_032.ra_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-weights/regnety_032_ra-7f2439f9.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-weights/regnety_032_ra-7f2439f9.pth'),
     'regnety_040.ra3_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-tpu-weights/regnety_040_ra3-670e1166.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-tpu-weights/regnety_040_ra3-670e1166.pth'),
     'regnety_064.ra3_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-tpu-weights/regnety_064_ra3-aa26dc7d.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-tpu-weights/regnety_064_ra3-aa26dc7d.pth'),
     'regnety_080.ra3_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-tpu-weights/regnety_080_ra3-1fdc4344.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-tpu-weights/regnety_080_ra3-1fdc4344.pth'),
     'regnety_120.sw_in12k_ft_in1k': _cfg(hf_hub_id='timm/'),
     'regnety_160.sw_in12k_ft_in1k': _cfg(hf_hub_id='timm/'),
     'regnety_160.lion_in12k_ft_in1k': _cfg(hf_hub_id='timm/'),
@@ -738,21 +738,21 @@ default_cfgs = generate_default_cfgs({
     'regnety_040_sgn.untrained': _cfg(url=''),
     'regnetv_040.ra3_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-tpu-weights/regnetv_040_ra3-c248f51f.pth',
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-tpu-weights/regnetv_040_ra3-c248f51f.pth',
         first_conv='stem'),
     'regnetv_064.ra3_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-tpu-weights/regnetv_064_ra3-530616c2.pth',
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-tpu-weights/regnetv_064_ra3-530616c2.pth',
         first_conv='stem'),
 
     'regnetz_005.untrained': _cfg(url=''),
     'regnetz_040.ra3_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-tpu-weights/regnetz_040_ra3-9007edf5.pth',
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-tpu-weights/regnetz_040_ra3-9007edf5.pth',
         input_size=(3, 256, 256), pool_size=(8, 8), crop_pct=1.0, test_input_size=(3, 320, 320)),
     'regnetz_040_h.ra3_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-tpu-weights/regnetz_040h_ra3-f594343b.pth',
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-tpu-weights/regnetz_040h_ra3-f594343b.pth',
         input_size=(3, 256, 256), pool_size=(8, 8), crop_pct=1.0, test_input_size=(3, 320, 320)),
 
     # used in DeiT for distillation (from Facebook DeiT GitHub repository)
@@ -828,41 +828,41 @@ default_cfgs = generate_default_cfgs({
 
     'regnety_320.seer_ft_in1k': _cfgtv2(
         hf_hub_id='timm/',
-        license='other', origin_url='https://github.com/facebookresearch/vissl',
+        license='other', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/vissl',
         url='https://dl.fbaipublicfiles.com/vissl/model_zoo/seer_finetuned/seer_regnet32_finetuned_in1k_model_final_checkpoint_phase78.torch',
         input_size=(3, 384, 384), pool_size=(12, 12), crop_pct=1.0),
     'regnety_640.seer_ft_in1k': _cfgtv2(
         hf_hub_id='timm/',
-        license='other', origin_url='https://github.com/facebookresearch/vissl',
+        license='other', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/vissl',
         url='https://dl.fbaipublicfiles.com/vissl/model_zoo/seer_finetuned/seer_regnet64_finetuned_in1k_model_final_checkpoint_phase78.torch',
         input_size=(3, 384, 384), pool_size=(12, 12), crop_pct=1.0),
     'regnety_1280.seer_ft_in1k': _cfgtv2(
         hf_hub_id='timm/',
-        license='other', origin_url='https://github.com/facebookresearch/vissl',
+        license='other', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/vissl',
         url='https://dl.fbaipublicfiles.com/vissl/model_zoo/seer_finetuned/seer_regnet128_finetuned_in1k_model_final_checkpoint_phase78.torch',
         input_size=(3, 384, 384), pool_size=(12, 12), crop_pct=1.0),
     'regnety_2560.seer_ft_in1k': _cfgtv2(
         hf_hub_id='timm/',
-        license='other', origin_url='https://github.com/facebookresearch/vissl',
+        license='other', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/vissl',
         url='https://dl.fbaipublicfiles.com/vissl/model_zoo/seer_finetuned/seer_regnet256_finetuned_in1k_model_final_checkpoint_phase38.torch',
         input_size=(3, 384, 384), pool_size=(12, 12), crop_pct=1.0),
 
     'regnety_320.seer': _cfgtv2(
         hf_hub_id='timm/',
         url='https://dl.fbaipublicfiles.com/vissl/model_zoo/seer_regnet32d/seer_regnet32gf_model_iteration244000.torch',
-        num_classes=0, license='other', origin_url='https://github.com/facebookresearch/vissl'),
+        num_classes=0, license='other', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/vissl'),
     'regnety_640.seer': _cfgtv2(
         hf_hub_id='timm/',
         url='https://dl.fbaipublicfiles.com/vissl/model_zoo/seer_regnet64/seer_regnet64gf_model_final_checkpoint_phase0.torch',
-        num_classes=0, license='other', origin_url='https://github.com/facebookresearch/vissl'),
+        num_classes=0, license='other', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/vissl'),
     'regnety_1280.seer': _cfgtv2(
         hf_hub_id='timm/',
         url='https://dl.fbaipublicfiles.com/vissl/model_zoo/swav_ig1b_regnet128Gf_cnstant_bs32_node16_sinkhorn10_proto16k_syncBN64_warmup8k/model_final_checkpoint_phase0.torch',
-        num_classes=0, license='other', origin_url='https://github.com/facebookresearch/vissl'),
+        num_classes=0, license='other', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/vissl'),
     # FIXME invalid weight <-> model match, mistake on their end
     #'regnety_2560.seer': _cfgtv2(
     #    url='https://dl.fbaipublicfiles.com/vissl/model_zoo/swav_ig1b_cosine_rg256gf_noBNhead_wd1e5_fairstore_bs16_node64_sinkhorn10_proto16k_apex_syncBN64_warmup8k/model_final_checkpoint_phase0.torch',
-    #    num_classes=0, license='other', origin_url='https://github.com/facebookresearch/vissl'),
+    #    num_classes=0, license='other', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/vissl'),
 
     'regnetx_002.pycls_in1k': _cfgpyc(hf_hub_id='timm/'),
     'regnetx_004.pycls_in1k': _cfgpyc(hf_hub_id='timm/'),
@@ -1093,7 +1093,7 @@ def regnetv_064(pretrained=False, **kwargs) -> RegNet:
 @register_model
 def regnetz_005(pretrained=False, **kwargs) -> RegNet:
     """RegNetZ-500MF
-    NOTE: config found in https://github.com/facebookresearch/ClassyVision/blob/main/classy_vision/models/regnet.py
+    NOTE: config found in https://mirror.ghproxy.com/https://github.com/facebookresearch/ClassyVision/blob/main/classy_vision/models/regnet.py
     but it's not clear it is equivalent to paper model as not detailed in the paper.
     """
     return _create_regnet('regnetz_005', pretrained, zero_init_last=False, **kwargs)
@@ -1102,7 +1102,7 @@ def regnetz_005(pretrained=False, **kwargs) -> RegNet:
 @register_model
 def regnetz_040(pretrained=False, **kwargs) -> RegNet:
     """RegNetZ-4.0GF
-    NOTE: config found in https://github.com/facebookresearch/ClassyVision/blob/main/classy_vision/models/regnet.py
+    NOTE: config found in https://mirror.ghproxy.com/https://github.com/facebookresearch/ClassyVision/blob/main/classy_vision/models/regnet.py
     but it's not clear it is equivalent to paper model as not detailed in the paper.
     """
     return _create_regnet('regnetz_040', pretrained, zero_init_last=False, **kwargs)
@@ -1111,7 +1111,7 @@ def regnetz_040(pretrained=False, **kwargs) -> RegNet:
 @register_model
 def regnetz_040_h(pretrained=False, **kwargs) -> RegNet:
     """RegNetZ-4.0GF
-    NOTE: config found in https://github.com/facebookresearch/ClassyVision/blob/main/classy_vision/models/regnet.py
+    NOTE: config found in https://mirror.ghproxy.com/https://github.com/facebookresearch/ClassyVision/blob/main/classy_vision/models/regnet.py
     but it's not clear it is equivalent to paper model as not detailed in the paper.
     """
     return _create_regnet('regnetz_040_h', pretrained, zero_init_last=False, **kwargs)

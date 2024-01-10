@@ -1,5 +1,5 @@
 """Pytorch Densenet implementation w/ tweaks
-This file is a copy of https://github.com/pytorch/vision 'densenet.py' (BSD-3-Clause) with
+This file is a copy of https://mirror.ghproxy.com/https://github.com/pytorch/vision 'densenet.py' (BSD-3-Clause) with
 fixed kwargs passthrough and addition of dynamic global avg/max pool.
 """
 import re

@@ -1,6 +1,6 @@
 """ DeiT - Data-efficient Image Transformers
 
-DeiT model defs and weights from https://github.com/facebookresearch/deit, original copyright below
+DeiT model defs and weights from https://mirror.ghproxy.com/https://github.com/facebookresearch/deit, original copyright below
 
 paper: `DeiT: Data-efficient Image Transformers` - https://arxiv.org/abs/2012.12877
 
@@ -243,7 +243,7 @@ default_cfgs = generate_default_cfgs({
 @register_model
 def deit_tiny_patch16_224(pretrained=False, **kwargs) -> VisionTransformer:
     """ DeiT-tiny model @ 224x224 from paper (https://arxiv.org/abs/2012.12877).
-    ImageNet-1k weights from https://github.com/facebookresearch/deit.
+    ImageNet-1k weights from https://mirror.ghproxy.com/https://github.com/facebookresearch/deit.
     """
     model_args = dict(patch_size=16, embed_dim=192, depth=12, num_heads=3)
     model = _create_deit('deit_tiny_patch16_224', pretrained=pretrained, **dict(model_args, **kwargs))
@@ -253,7 +253,7 @@ def deit_tiny_patch16_224(pretrained=False, **kwargs) -> VisionTransformer:
 @register_model
 def deit_small_patch16_224(pretrained=False, **kwargs) -> VisionTransformer:
     """ DeiT-small model @ 224x224 from paper (https://arxiv.org/abs/2012.12877).
-    ImageNet-1k weights from https://github.com/facebookresearch/deit.
+    ImageNet-1k weights from https://mirror.ghproxy.com/https://github.com/facebookresearch/deit.
     """
     model_args = dict(patch_size=16, embed_dim=384, depth=12, num_heads=6)
     model = _create_deit('deit_small_patch16_224', pretrained=pretrained, **dict(model_args, **kwargs))
@@ -263,7 +263,7 @@ def deit_small_patch16_224(pretrained=False, **kwargs) -> VisionTransformer:
 @register_model
 def deit_base_patch16_224(pretrained=False, **kwargs) -> VisionTransformer:
     """ DeiT base model @ 224x224 from paper (https://arxiv.org/abs/2012.12877).
-    ImageNet-1k weights from https://github.com/facebookresearch/deit.
+    ImageNet-1k weights from https://mirror.ghproxy.com/https://github.com/facebookresearch/deit.
     """
     model_args = dict(patch_size=16, embed_dim=768, depth=12, num_heads=12)
     model = _create_deit('deit_base_patch16_224', pretrained=pretrained, **dict(model_args, **kwargs))
@@ -273,7 +273,7 @@ def deit_base_patch16_224(pretrained=False, **kwargs) -> VisionTransformer:
 @register_model
 def deit_base_patch16_384(pretrained=False, **kwargs) -> VisionTransformer:
     """ DeiT base model @ 384x384 from paper (https://arxiv.org/abs/2012.12877).
-    ImageNet-1k weights from https://github.com/facebookresearch/deit.
+    ImageNet-1k weights from https://mirror.ghproxy.com/https://github.com/facebookresearch/deit.
     """
     model_args = dict(patch_size=16, embed_dim=768, depth=12, num_heads=12)
     model = _create_deit('deit_base_patch16_384', pretrained=pretrained, **dict(model_args, **kwargs))
@@ -283,7 +283,7 @@ def deit_base_patch16_384(pretrained=False, **kwargs) -> VisionTransformer:
 @register_model
 def deit_tiny_distilled_patch16_224(pretrained=False, **kwargs) -> VisionTransformerDistilled:
     """ DeiT-tiny distilled model @ 224x224 from paper (https://arxiv.org/abs/2012.12877).
-    ImageNet-1k weights from https://github.com/facebookresearch/deit.
+    ImageNet-1k weights from https://mirror.ghproxy.com/https://github.com/facebookresearch/deit.
     """
     model_args = dict(patch_size=16, embed_dim=192, depth=12, num_heads=3)
     model = _create_deit(
@@ -294,7 +294,7 @@ def deit_tiny_distilled_patch16_224(pretrained=False, **kwargs) -> VisionTransfo
 @register_model
 def deit_small_distilled_patch16_224(pretrained=False, **kwargs) -> VisionTransformerDistilled:
     """ DeiT-small distilled model @ 224x224 from paper (https://arxiv.org/abs/2012.12877).
-    ImageNet-1k weights from https://github.com/facebookresearch/deit.
+    ImageNet-1k weights from https://mirror.ghproxy.com/https://github.com/facebookresearch/deit.
     """
     model_args = dict(patch_size=16, embed_dim=384, depth=12, num_heads=6)
     model = _create_deit(
@@ -305,7 +305,7 @@ def deit_small_distilled_patch16_224(pretrained=False, **kwargs) -> VisionTransf
 @register_model
 def deit_base_distilled_patch16_224(pretrained=False, **kwargs) -> VisionTransformerDistilled:
     """ DeiT-base distilled model @ 224x224 from paper (https://arxiv.org/abs/2012.12877).
-    ImageNet-1k weights from https://github.com/facebookresearch/deit.
+    ImageNet-1k weights from https://mirror.ghproxy.com/https://github.com/facebookresearch/deit.
     """
     model_args = dict(patch_size=16, embed_dim=768, depth=12, num_heads=12)
     model = _create_deit(
@@ -316,7 +316,7 @@ def deit_base_distilled_patch16_224(pretrained=False, **kwargs) -> VisionTransfo
 @register_model
 def deit_base_distilled_patch16_384(pretrained=False, **kwargs) -> VisionTransformerDistilled:
     """ DeiT-base distilled model @ 384x384 from paper (https://arxiv.org/abs/2012.12877).
-    ImageNet-1k weights from https://github.com/facebookresearch/deit.
+    ImageNet-1k weights from https://mirror.ghproxy.com/https://github.com/facebookresearch/deit.
     """
     model_args = dict(patch_size=16, embed_dim=768, depth=12, num_heads=12)
     model = _create_deit(
@@ -327,7 +327,7 @@ def deit_base_distilled_patch16_384(pretrained=False, **kwargs) -> VisionTransfo
 @register_model
 def deit3_small_patch16_224(pretrained=False, **kwargs) -> VisionTransformer:
     """ DeiT-3 small model @ 224x224 from paper (https://arxiv.org/abs/2204.07118).
-    ImageNet-1k weights from https://github.com/facebookresearch/deit.
+    ImageNet-1k weights from https://mirror.ghproxy.com/https://github.com/facebookresearch/deit.
     """
     model_args = dict(patch_size=16, embed_dim=384, depth=12, num_heads=6, no_embed_class=True, init_values=1e-6)
     model = _create_deit('deit3_small_patch16_224', pretrained=pretrained, **dict(model_args, **kwargs))
@@ -337,7 +337,7 @@ def deit3_small_patch16_224(pretrained=False, **kwargs) -> VisionTransformer:
 @register_model
 def deit3_small_patch16_384(pretrained=False, **kwargs) -> VisionTransformer:
     """ DeiT-3 small model @ 384x384 from paper (https://arxiv.org/abs/2204.07118).
-    ImageNet-1k weights from https://github.com/facebookresearch/deit.
+    ImageNet-1k weights from https://mirror.ghproxy.com/https://github.com/facebookresearch/deit.
     """
     model_args = dict(patch_size=16, embed_dim=384, depth=12, num_heads=6, no_embed_class=True, init_values=1e-6)
     model = _create_deit('deit3_small_patch16_384', pretrained=pretrained, **dict(model_args, **kwargs))
@@ -347,7 +347,7 @@ def deit3_small_patch16_384(pretrained=False, **kwargs) -> VisionTransformer:
 @register_model
 def deit3_medium_patch16_224(pretrained=False, **kwargs) -> VisionTransformer:
     """ DeiT-3 medium model @ 224x224 (https://arxiv.org/abs/2012.12877).
-    ImageNet-1k weights from https://github.com/facebookresearch/deit.
+    ImageNet-1k weights from https://mirror.ghproxy.com/https://github.com/facebookresearch/deit.
     """
     model_args = dict(patch_size=16, embed_dim=512, depth=12, num_heads=8, no_embed_class=True, init_values=1e-6)
     model = _create_deit('deit3_medium_patch16_224', pretrained=pretrained, **dict(model_args, **kwargs))
@@ -357,7 +357,7 @@ def deit3_medium_patch16_224(pretrained=False, **kwargs) -> VisionTransformer:
 @register_model
 def deit3_base_patch16_224(pretrained=False, **kwargs) -> VisionTransformer:
     """ DeiT-3 base model @ 224x224 from paper (https://arxiv.org/abs/2204.07118).
-    ImageNet-1k weights from https://github.com/facebookresearch/deit.
+    ImageNet-1k weights from https://mirror.ghproxy.com/https://github.com/facebookresearch/deit.
     """
     model_args = dict(patch_size=16, embed_dim=768, depth=12, num_heads=12, no_embed_class=True, init_values=1e-6)
     model = _create_deit('deit3_base_patch16_224', pretrained=pretrained, **dict(model_args, **kwargs))
@@ -367,7 +367,7 @@ def deit3_base_patch16_224(pretrained=False, **kwargs) -> VisionTransformer:
 @register_model
 def deit3_base_patch16_384(pretrained=False, **kwargs) -> VisionTransformer:
     """ DeiT-3 base model @ 384x384 from paper (https://arxiv.org/abs/2204.07118).
-    ImageNet-1k weights from https://github.com/facebookresearch/deit.
+    ImageNet-1k weights from https://mirror.ghproxy.com/https://github.com/facebookresearch/deit.
     """
     model_args = dict(patch_size=16, embed_dim=768, depth=12, num_heads=12, no_embed_class=True, init_values=1e-6)
     model = _create_deit('deit3_base_patch16_384', pretrained=pretrained, **dict(model_args, **kwargs))
@@ -377,7 +377,7 @@ def deit3_base_patch16_384(pretrained=False, **kwargs) -> VisionTransformer:
 @register_model
 def deit3_large_patch16_224(pretrained=False, **kwargs) -> VisionTransformer:
     """ DeiT-3 large model @ 224x224 from paper (https://arxiv.org/abs/2204.07118).
-    ImageNet-1k weights from https://github.com/facebookresearch/deit.
+    ImageNet-1k weights from https://mirror.ghproxy.com/https://github.com/facebookresearch/deit.
     """
     model_args = dict(patch_size=16, embed_dim=1024, depth=24, num_heads=16, no_embed_class=True, init_values=1e-6)
     model = _create_deit('deit3_large_patch16_224', pretrained=pretrained, **dict(model_args, **kwargs))
@@ -387,7 +387,7 @@ def deit3_large_patch16_224(pretrained=False, **kwargs) -> VisionTransformer:
 @register_model
 def deit3_large_patch16_384(pretrained=False, **kwargs) -> VisionTransformer:
     """ DeiT-3 large model @ 384x384 from paper (https://arxiv.org/abs/2204.07118).
-    ImageNet-1k weights from https://github.com/facebookresearch/deit.
+    ImageNet-1k weights from https://mirror.ghproxy.com/https://github.com/facebookresearch/deit.
     """
     model_args = dict(patch_size=16, embed_dim=1024, depth=24, num_heads=16, no_embed_class=True, init_values=1e-6)
     model = _create_deit('deit3_large_patch16_384', pretrained=pretrained, **dict(model_args, **kwargs))
@@ -397,7 +397,7 @@ def deit3_large_patch16_384(pretrained=False, **kwargs) -> VisionTransformer:
 @register_model
 def deit3_huge_patch14_224(pretrained=False, **kwargs) -> VisionTransformer:
     """ DeiT-3 base model @ 384x384 from paper (https://arxiv.org/abs/2204.07118).
-    ImageNet-1k weights from https://github.com/facebookresearch/deit.
+    ImageNet-1k weights from https://mirror.ghproxy.com/https://github.com/facebookresearch/deit.
     """
     model_args = dict(patch_size=14, embed_dim=1280, depth=32, num_heads=16, no_embed_class=True, init_values=1e-6)
     model = _create_deit('deit3_huge_patch14_224', pretrained=pretrained, **dict(model_args, **kwargs))

@@ -1,8 +1,8 @@
 """ Deep Layer Aggregation and DLA w/ Res2Net
-DLA original adapted from Official Pytorch impl at: https://github.com/ucbdrive/dla
+DLA original adapted from Official Pytorch impl at: https://mirror.ghproxy.com/https://github.com/ucbdrive/dla
 DLA Paper: `Deep Layer Aggregation` - https://arxiv.org/abs/1707.06484
 
-Res2Net additions from: https://github.com/gasvn/Res2Net/
+Res2Net additions from: https://mirror.ghproxy.com/https://github.com/gasvn/Res2Net/
 Res2Net Paper: `Res2Net: A New Multi-scale Backbone Architecture` - https://arxiv.org/abs/1904.01169
 """
 import math
@@ -96,7 +96,7 @@ class DlaBottleneck(nn.Module):
 
 class DlaBottle2neck(nn.Module):
     """ Res2Net/Res2NeXT DLA Bottleneck
-    Adapted from https://github.com/gasvn/Res2Net/blob/master/dla.py
+    Adapted from https://mirror.ghproxy.com/https://github.com/gasvn/Res2Net/blob/master/dla.py
     """
     expansion = 2
 

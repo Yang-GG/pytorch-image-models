@@ -1,6 +1,6 @@
 """
 InceptionNeXt paper: https://arxiv.org/abs/2303.16900
-Original implementation & weights from: https://github.com/sail-sg/inceptionnext
+Original implementation & weights from: https://mirror.ghproxy.com/https://github.com/sail-sg/inceptionnext
 """
 
 from functools import partial
@@ -56,7 +56,7 @@ class InceptionDWConv2d(nn.Module):
 
 class ConvMlp(nn.Module):
     """ MLP using 1x1 convs that keeps spatial dims
-    copied from timm: https://github.com/huggingface/pytorch-image-models/blob/v0.6.11/timm/models/layers/mlp.py
+    copied from timm: https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/blob/v0.6.11/timm/models/layers/mlp.py
     """
 
     def __init__(
@@ -386,20 +386,20 @@ def _cfg(url='', **kwargs):
 default_cfgs = generate_default_cfgs({
     'inception_next_tiny.sail_in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/sail-sg/inceptionnext/releases/download/model/inceptionnext_tiny.pth',
+        # url='https://mirror.ghproxy.com/https://github.com/sail-sg/inceptionnext/releases/download/model/inceptionnext_tiny.pth',
     ),
     'inception_next_small.sail_in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/sail-sg/inceptionnext/releases/download/model/inceptionnext_small.pth',
+        # url='https://mirror.ghproxy.com/https://github.com/sail-sg/inceptionnext/releases/download/model/inceptionnext_small.pth',
     ),
     'inception_next_base.sail_in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/sail-sg/inceptionnext/releases/download/model/inceptionnext_base.pth',
+        # url='https://mirror.ghproxy.com/https://github.com/sail-sg/inceptionnext/releases/download/model/inceptionnext_base.pth',
         crop_pct=0.95,
     ),
     'inception_next_base.sail_in1k_384': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/sail-sg/inceptionnext/releases/download/model/inceptionnext_base_384.pth',
+        # url='https://mirror.ghproxy.com/https://github.com/sail-sg/inceptionnext/releases/download/model/inceptionnext_base_384.pth',
         input_size=(3, 384, 384), pool_size=(12, 12), crop_pct=1.0,
     ),
 })

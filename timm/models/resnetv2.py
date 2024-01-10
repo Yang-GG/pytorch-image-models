@@ -1,12 +1,12 @@
 """Pre-Activation ResNet v2 with GroupNorm and Weight Standardization.
 
 A PyTorch implementation of ResNetV2 adapted from the Google Big-Transfer (BiT) source code
-at https://github.com/google-research/big_transfer to match timm interfaces. The BiT weights have
+at https://mirror.ghproxy.com/https://github.com/google-research/big_transfer to match timm interfaces. The BiT weights have
 been included here as pretrained models from their original .NPZ checkpoints.
 
 Additionally, supports non pre-activation bottleneck for use as a backbone for Vision Transfomers (ViT) and
 extra padding support to allow porting of official Hybrid ResNet pretrained weights from
-https://github.com/google-research/vision_transformer
+https://mirror.ghproxy.com/https://github.com/google-research/vision_transformer
 
 Thanks to the Google team for the above two repositories and associated papers:
 * Big Transfer (BiT): General Visual Representation Learning - https://arxiv.org/abs/1912.11370
@@ -50,7 +50,7 @@ class PreActBottleneck(nn.Module):
     """Pre-activation (v2) bottleneck block.
 
     Follows the implementation of "Identity Mappings in Deep Residual Networks":
-    https://github.com/KaimingHe/resnet-1k-layers/blob/master/resnet-pre-act.lua
+    https://mirror.ghproxy.com/https://github.com/KaimingHe/resnet-1k-layers/blob/master/resnet-pre-act.lua
 
     Except it puts the stride on 3x3 conv when available.
     """

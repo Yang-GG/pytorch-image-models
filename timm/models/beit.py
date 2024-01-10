@@ -1,6 +1,6 @@
 """ BEiT: BERT Pre-Training of Image Transformers (https://arxiv.org/abs/2106.08254)
 
-Model from official source: https://github.com/microsoft/unilm/tree/master/beit
+Model from official source: https://mirror.ghproxy.com/https://github.com/microsoft/unilm/tree/master/beit
 
 @inproceedings{beit,
 title={{BEiT}: {BERT} Pre-Training of Image Transformers},
@@ -10,7 +10,7 @@ year={2022},
 url={https://openreview.net/forum?id=p-BhZSz59o4}
 }
 
-BEiT-v2 from https://github.com/microsoft/unilm/tree/master/beit2
+BEiT-v2 from https://mirror.ghproxy.com/https://github.com/microsoft/unilm/tree/master/beit2
 
 @article{beitv2,
 title={{BEiT v2}: Masked Image Modeling with Vector-Quantized Visual Tokenizers},
@@ -28,14 +28,14 @@ Modifications by / Copyright 2021 Ross Wightman, original copyrights below
 """
 # --------------------------------------------------------
 # BEIT: BERT Pre-Training of Image Transformers (https://arxiv.org/abs/2106.08254)
-# Github source: https://github.com/microsoft/unilm/tree/master/beit
+# Github source: https://mirror.ghproxy.com/https://github.com/microsoft/unilm/tree/master/beit
 # Copyright (c) 2021 Microsoft
 # Licensed under The MIT License [see LICENSE for details]
 # By Hangbo Bao
 # Based on timm and DeiT code bases
-# https://github.com/rwightman/pytorch-image-models/tree/master/timm
-# https://github.com/facebookresearch/deit/
-# https://github.com/facebookresearch/dino
+# https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/tree/master/timm
+# https://mirror.ghproxy.com/https://github.com/facebookresearch/deit/
+# https://mirror.ghproxy.com/https://github.com/facebookresearch/dino
 # --------------------------------------------------------'
 
 import math

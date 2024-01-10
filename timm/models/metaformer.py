@@ -9,7 +9,7 @@ All implemented models support feature extraction and variable input resolution.
 Original implementation by Weihao Yu et al.,
 adapted for timm by Fredo Guan and Ross Wightman.
 
-Adapted from https://github.com/sail-sg/metaformer, original copyright below
+Adapted from https://mirror.ghproxy.com/https://github.com/sail-sg/metaformer, original copyright below
 """
 
 # Copyright 2022 Garena Online Private Limited

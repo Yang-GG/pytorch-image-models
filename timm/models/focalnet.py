@@ -2,7 +2,7 @@
 
 As described in `Focal Modulation Networks` - https://arxiv.org/abs/2203.11926
 
-Significant modifications and refactoring from the original impl at https://github.com/microsoft/FocalNet
+Significant modifications and refactoring from the original impl at https://mirror.ghproxy.com/https://github.com/microsoft/FocalNet
 
 This impl is/has:
 * fully convolutional, NCHW tensor layout throughout, seemed to have minimal performance impact but more flexible

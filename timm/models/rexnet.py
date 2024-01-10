@@ -3,7 +3,7 @@
 A PyTorch impl of `ReXNet: Diminishing Representational Bottleneck on Convolutional Neural Network` -
 https://arxiv.org/abs/2007.00992
 
-Adapted from original impl at https://github.com/clovaai/rexnet
+Adapted from original impl at https://mirror.ghproxy.com/https://github.com/clovaai/rexnet
 Copyright (c) 2020-present NAVER Corp. MIT license
 
 Changes for timm, feature extraction, and rounded channel variant hacked together by Ross Wightman

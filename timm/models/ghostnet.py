@@ -4,8 +4,8 @@ GhostNet: More Features from Cheap Operations. https://arxiv.org/abs/1911.11907
 GhostNetV2: Enhance Cheap Operation with Long-Range Attention. https://proceedings.neurips.cc/paper_files/paper/2022/file/40b60852a4abdaa696b5a1a78da34635-Paper-Conference.pdf
 
 The train script & code of models at:
-Original model: https://github.com/huawei-noah/CV-backbones/tree/master/ghostnet_pytorch
-Original model: https://github.com/huawei-noah/Efficient-AI-Backbones/blob/master/ghostnetv2_pytorch/model/ghostnetv2_torch.py
+Original model: https://mirror.ghproxy.com/https://github.com/huawei-noah/CV-backbones/tree/master/ghostnet_pytorch
+Original model: https://mirror.ghproxy.com/https://github.com/huawei-noah/Efficient-AI-Backbones/blob/master/ghostnetv2_pytorch/model/ghostnetv2_torch.py
 """
 import math
 from functools import partial
@@ -372,20 +372,20 @@ default_cfgs = generate_default_cfgs({
     'ghostnet_050.untrained': _cfg(),
     'ghostnet_100.in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/huawei-noah/CV-backbones/releases/download/ghostnet_pth/ghostnet_1x.pth'
+        # url='https://mirror.ghproxy.com/https://github.com/huawei-noah/CV-backbones/releases/download/ghostnet_pth/ghostnet_1x.pth'
     ),
     'ghostnet_130.untrained': _cfg(),
     'ghostnetv2_100.in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/huawei-noah/Efficient-AI-Backbones/releases/download/GhostNetV2/ck_ghostnetv2_10.pth.tar'
+        # url='https://mirror.ghproxy.com/https://github.com/huawei-noah/Efficient-AI-Backbones/releases/download/GhostNetV2/ck_ghostnetv2_10.pth.tar'
     ),
     'ghostnetv2_130.in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/huawei-noah/Efficient-AI-Backbones/releases/download/GhostNetV2/ck_ghostnetv2_13.pth.tar'
+        # url='https://mirror.ghproxy.com/https://github.com/huawei-noah/Efficient-AI-Backbones/releases/download/GhostNetV2/ck_ghostnetv2_13.pth.tar'
     ),
     'ghostnetv2_160.in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/huawei-noah/Efficient-AI-Backbones/releases/download/GhostNetV2/ck_ghostnetv2_16.pth.tar'
+        # url='https://mirror.ghproxy.com/https://github.com/huawei-noah/Efficient-AI-Backbones/releases/download/GhostNetV2/ck_ghostnetv2_16.pth.tar'
     ),
 })
 

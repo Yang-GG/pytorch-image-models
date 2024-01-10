@@ -3,7 +3,7 @@ CoaT architecture.
 
 Paper: Co-Scale Conv-Attentional Image Transformers - https://arxiv.org/abs/2104.06399
 
-Official CoaT code at: https://github.com/mlpc-ucsd/CoaT
+Official CoaT code at: https://mirror.ghproxy.com/https://github.com/mlpc-ucsd/CoaT
 
 Modified from timm/models/vision_transformer.py
 """

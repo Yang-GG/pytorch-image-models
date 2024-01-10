@@ -1,6 +1,6 @@
 """ EVA
 
-EVA from https://github.com/baaivision/EVA , paper: https://arxiv.org/abs/2211.07636
+EVA from https://mirror.ghproxy.com/https://github.com/baaivision/EVA , paper: https://arxiv.org/abs/2211.07636
 
 @article{EVA,
   title={EVA: Exploring the Limits of Masked Visual Representation Learning at Scale},

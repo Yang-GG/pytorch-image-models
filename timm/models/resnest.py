@@ -2,7 +2,7 @@
 
 Paper: `ResNeSt: Split-Attention Networks` - https://arxiv.org/abs/2004.08955
 
-Adapted from original PyTorch impl w/ weights at https://github.com/zhanghang1989/ResNeSt by Hang Zhang
+Adapted from original PyTorch impl w/ weights at https://mirror.ghproxy.com/https://github.com/zhanghang1989/ResNeSt by Hang Zhang
 
 Modified for torchscript compat, and consistency with timm by Ross Wightman
 """
@@ -231,7 +231,7 @@ def resnest269e(pretrained=False, **kwargs) -> ResNet:
 
 @register_model
 def resnest50d_4s2x40d(pretrained=False, **kwargs) -> ResNet:
-    """ResNeSt-50 4s2x40d from https://github.com/zhanghang1989/ResNeSt/blob/master/ablation.md
+    """ResNeSt-50 4s2x40d from https://mirror.ghproxy.com/https://github.com/zhanghang1989/ResNeSt/blob/master/ablation.md
     """
     model_kwargs = dict(
         block=ResNestBottleneck, layers=[3, 4, 6, 3],
@@ -242,7 +242,7 @@ def resnest50d_4s2x40d(pretrained=False, **kwargs) -> ResNet:
 
 @register_model
 def resnest50d_1s4x24d(pretrained=False, **kwargs) -> ResNet:
-    """ResNeSt-50 1s4x24d from https://github.com/zhanghang1989/ResNeSt/blob/master/ablation.md
+    """ResNeSt-50 1s4x24d from https://mirror.ghproxy.com/https://github.com/zhanghang1989/ResNeSt/blob/master/ablation.md
     """
     model_kwargs = dict(
         block=ResNestBottleneck, layers=[3, 4, 6, 3],

@@ -34,7 +34,7 @@ def _cfg(url='', **kwargs):
 
 default_cfgs = {
     'tnt_s_patch16_224': _cfg(
-        url='https://github.com/contrastive/pytorch-image-models/releases/download/TNT/tnt_s_patch16_224.pth.tar',
+        url='https://mirror.ghproxy.com/https://github.com/contrastive/pytorch-image-models/releases/download/TNT/tnt_s_patch16_224.pth.tar',
         mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5),
     ),
     'tnt_b_patch16_224': _cfg(

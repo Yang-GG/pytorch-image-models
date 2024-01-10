@@ -2,7 +2,7 @@
 TResNet: High Performance GPU-Dedicated Architecture
 https://arxiv.org/pdf/2003.13630.pdf
 
-Original model: https://github.com/mrT23/TResNet
+Original model: https://mirror.ghproxy.com/https://github.com/mrT23/TResNet
 
 """
 from collections import OrderedDict

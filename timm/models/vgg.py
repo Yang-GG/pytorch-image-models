@@ -1,6 +1,6 @@
 """VGG
 
-Adapted from https://github.com/pytorch/vision 'vgg.py' (BSD-3-Clause) with a few changes for
+Adapted from https://mirror.ghproxy.com/https://github.com/pytorch/vision 'vgg.py' (BSD-3-Clause) with a few changes for
 timm functionality.
 
 Copyright 2021 Ross Wightman

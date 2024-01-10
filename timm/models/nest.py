@@ -5,7 +5,7 @@ A PyTorch implement of Aggregating Nested Transformers as described in:
 'Aggregating Nested Transformers'
     - https://arxiv.org/abs/2105.12723
 
-The official Jax code is released and available at https://github.com/google-research/nested-transformer. The weights
+The official Jax code is released and available at https://mirror.ghproxy.com/https://github.com/google-research/nested-transformer. The weights
 have been converted with convert/convert_nest_flax.py
 
 Acknowledgments:
@@ -296,7 +296,7 @@ class Nest(nn.Module):
             - Default values follow NesT-B from the original Jax code.
             - `embed_dims`, `num_heads`, `depths` should be ints or tuples with length `num_levels`.
             - For those following the paper, Table A1 may have errors!
-                - https://github.com/google-research/nested-transformer/issues/2
+                - https://mirror.ghproxy.com/https://github.com/google-research/nested-transformer/issues/2
         """
         super().__init__()
 

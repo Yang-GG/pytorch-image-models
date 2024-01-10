@@ -2,7 +2,7 @@
 An implementation of RepGhostNet Model as defined in:
 RepGhost: A Hardware-Efficient Ghost Module via Re-parameterization. https://arxiv.org/abs/2211.06088
 
-Original implementation: https://github.com/ChengpengChen/RepGhost
+Original implementation: https://mirror.ghproxy.com/https://github.com/ChengpengChen/RepGhost
 """
 import copy
 from functools import partial
@@ -322,7 +322,7 @@ class RepGhostNet(nn.Module):
 
 def repghost_model_convert(model: torch.nn.Module, save_path=None, do_copy=True):
     """
-    taken from from https://github.com/DingXiaoH/RepVGG/blob/main/repvgg.py
+    taken from from https://mirror.ghproxy.com/https://github.com/DingXiaoH/RepVGG/blob/main/repvgg.py
     """
     if do_copy:
         model = copy.deepcopy(model)
@@ -391,35 +391,35 @@ def _cfg(url='', **kwargs):
 default_cfgs = generate_default_cfgs({
     'repghostnet_050.in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/ChengpengChen/RepGhost/releases/download/RepGhost/repghostnet_0_5x_43M_66.95.pth.tar'
+        # url='https://mirror.ghproxy.com/https://github.com/ChengpengChen/RepGhost/releases/download/RepGhost/repghostnet_0_5x_43M_66.95.pth.tar'
     ),
     'repghostnet_058.in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/ChengpengChen/RepGhost/releases/download/RepGhost/repghostnet_0_58x_60M_68.94.pth.tar'
+        # url='https://mirror.ghproxy.com/https://github.com/ChengpengChen/RepGhost/releases/download/RepGhost/repghostnet_0_58x_60M_68.94.pth.tar'
     ),
     'repghostnet_080.in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/ChengpengChen/RepGhost/releases/download/RepGhost/repghostnet_0_8x_96M_72.24.pth.tar'
+        # url='https://mirror.ghproxy.com/https://github.com/ChengpengChen/RepGhost/releases/download/RepGhost/repghostnet_0_8x_96M_72.24.pth.tar'
     ),
     'repghostnet_100.in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/ChengpengChen/RepGhost/releases/download/RepGhost/repghostnet_1_0x_142M_74.22.pth.tar'
+        # url='https://mirror.ghproxy.com/https://github.com/ChengpengChen/RepGhost/releases/download/RepGhost/repghostnet_1_0x_142M_74.22.pth.tar'
     ),
     'repghostnet_111.in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/ChengpengChen/RepGhost/releases/download/RepGhost/repghostnet_1_11x_170M_75.07.pth.tar'
+        # url='https://mirror.ghproxy.com/https://github.com/ChengpengChen/RepGhost/releases/download/RepGhost/repghostnet_1_11x_170M_75.07.pth.tar'
     ),
     'repghostnet_130.in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/ChengpengChen/RepGhost/releases/download/RepGhost/repghostnet_1_3x_231M_76.37.pth.tar'
+        # url='https://mirror.ghproxy.com/https://github.com/ChengpengChen/RepGhost/releases/download/RepGhost/repghostnet_1_3x_231M_76.37.pth.tar'
     ),
     'repghostnet_150.in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/ChengpengChen/RepGhost/releases/download/RepGhost/repghostnet_1_5x_301M_77.45.pth.tar'
+        # url='https://mirror.ghproxy.com/https://github.com/ChengpengChen/RepGhost/releases/download/RepGhost/repghostnet_1_5x_301M_77.45.pth.tar'
     ),
     'repghostnet_200.in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/ChengpengChen/RepGhost/releases/download/RepGhost/repghostnet_2_0x_516M_78.81.pth.tar'
+        # url='https://mirror.ghproxy.com/https://github.com/ChengpengChen/RepGhost/releases/download/RepGhost/repghostnet_2_0x_516M_78.81.pth.tar'
     ),
 })
 

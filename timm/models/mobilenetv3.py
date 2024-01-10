@@ -595,90 +595,90 @@ default_cfgs = generate_default_cfgs({
     'mobilenetv3_large_075.untrained': _cfg(url=''),
     'mobilenetv3_large_100.ra_in1k': _cfg(
         interpolation='bicubic',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/mobilenetv3_large_100_ra-f55367f5.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/mobilenetv3_large_100_ra-f55367f5.pth',
         hf_hub_id='timm/'),
     'mobilenetv3_large_100.miil_in21k_ft_in1k': _cfg(
         interpolation='bilinear', mean=(0., 0., 0.), std=(1., 1., 1.),
-        origin_url='https://github.com/Alibaba-MIIL/ImageNet21K',
+        origin_url='https://mirror.ghproxy.com/https://github.com/Alibaba-MIIL/ImageNet21K',
         paper_ids='arXiv:2104.10972v4',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/mobilenetv3_large_100_1k_miil_78_0-66471c13.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/mobilenetv3_large_100_1k_miil_78_0-66471c13.pth',
         hf_hub_id='timm/'),
     'mobilenetv3_large_100.miil_in21k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/mobilenetv3_large_100_in21k_miil-d71cc17b.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/mobilenetv3_large_100_in21k_miil-d71cc17b.pth',
         hf_hub_id='timm/',
-        origin_url='https://github.com/Alibaba-MIIL/ImageNet21K',
+        origin_url='https://mirror.ghproxy.com/https://github.com/Alibaba-MIIL/ImageNet21K',
         paper_ids='arXiv:2104.10972v4',
         interpolation='bilinear', mean=(0., 0., 0.), std=(1., 1., 1.), num_classes=11221),
 
     'mobilenetv3_small_050.lamb_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/mobilenetv3_small_050_lambc-4b7bbe87.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/mobilenetv3_small_050_lambc-4b7bbe87.pth',
         hf_hub_id='timm/',
         interpolation='bicubic'),
     'mobilenetv3_small_075.lamb_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/mobilenetv3_small_075_lambc-384766db.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/mobilenetv3_small_075_lambc-384766db.pth',
         hf_hub_id='timm/',
         interpolation='bicubic'),
     'mobilenetv3_small_100.lamb_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/mobilenetv3_small_100_lamb-266a294c.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/mobilenetv3_small_100_lamb-266a294c.pth',
         hf_hub_id='timm/',
         interpolation='bicubic'),
 
     'mobilenetv3_rw.rmsp_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/mobilenetv3_100-35495452.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/mobilenetv3_100-35495452.pth',
         hf_hub_id='timm/',
         interpolation='bicubic'),
 
     'tf_mobilenetv3_large_075.in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/tf_mobilenetv3_large_075-150ee8b0.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/tf_mobilenetv3_large_075-150ee8b0.pth',
         hf_hub_id='timm/',
         mean=IMAGENET_INCEPTION_MEAN, std=IMAGENET_INCEPTION_STD),
     'tf_mobilenetv3_large_100.in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/tf_mobilenetv3_large_100-427764d5.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/tf_mobilenetv3_large_100-427764d5.pth',
         hf_hub_id='timm/',
         mean=IMAGENET_INCEPTION_MEAN, std=IMAGENET_INCEPTION_STD),
     'tf_mobilenetv3_large_minimal_100.in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/tf_mobilenetv3_large_minimal_100-8596ae28.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/tf_mobilenetv3_large_minimal_100-8596ae28.pth',
         hf_hub_id='timm/',
         mean=IMAGENET_INCEPTION_MEAN, std=IMAGENET_INCEPTION_STD),
     'tf_mobilenetv3_small_075.in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/tf_mobilenetv3_small_075-da427f52.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/tf_mobilenetv3_small_075-da427f52.pth',
         hf_hub_id='timm/',
         mean=IMAGENET_INCEPTION_MEAN, std=IMAGENET_INCEPTION_STD),
     'tf_mobilenetv3_small_100.in1k': _cfg(
-        url= 'https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/tf_mobilenetv3_small_100-37f49e2b.pth',
+        url= 'https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/tf_mobilenetv3_small_100-37f49e2b.pth',
         hf_hub_id='timm/',
         mean=IMAGENET_INCEPTION_MEAN, std=IMAGENET_INCEPTION_STD),
     'tf_mobilenetv3_small_minimal_100.in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/tf_mobilenetv3_small_minimal_100-922a7843.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/tf_mobilenetv3_small_minimal_100-922a7843.pth',
         hf_hub_id='timm/',
         mean=IMAGENET_INCEPTION_MEAN, std=IMAGENET_INCEPTION_STD),
 
     'fbnetv3_b.ra2_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/fbnetv3_b_224-ead5d2a1.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/fbnetv3_b_224-ead5d2a1.pth',
         hf_hub_id='timm/',
         test_input_size=(3, 256, 256), crop_pct=0.95),
     'fbnetv3_d.ra2_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/fbnetv3_d_224-c98bce42.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/fbnetv3_d_224-c98bce42.pth',
         hf_hub_id='timm/',
         test_input_size=(3, 256, 256), crop_pct=0.95),
     'fbnetv3_g.ra2_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/fbnetv3_g_240-0b1df83b.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/fbnetv3_g_240-0b1df83b.pth',
         hf_hub_id='timm/',
         input_size=(3, 240, 240), test_input_size=(3, 288, 288), crop_pct=0.95, pool_size=(8, 8)),
 
     "lcnet_035.untrained": _cfg(),
     "lcnet_050.ra2_in1k": _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/lcnet_050-f447553b.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/lcnet_050-f447553b.pth',
         hf_hub_id='timm/',
         interpolation='bicubic',
     ),
     "lcnet_075.ra2_in1k": _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/lcnet_075-318cad2c.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/lcnet_075-318cad2c.pth',
         hf_hub_id='timm/',
         interpolation='bicubic',
     ),
     "lcnet_100.ra2_in1k": _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/lcnet_100-a929038c.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/lcnet_100-a929038c.pth',
         hf_hub_id='timm/',
         interpolation='bicubic',
     ),

@@ -8,7 +8,7 @@
 }
 
 Paper link: https://arxiv.org/abs/2103.10697
-Original code: https://github.com/facebookresearch/convit, original copyright below
+Original code: https://mirror.ghproxy.com/https://github.com/facebookresearch/convit, original copyright below
 
 Modifications and additions for timm hacked together by / Copyright 2021, Ross Wightman
 """
@@ -19,7 +19,7 @@ Modifications and additions for timm hacked together by / Copyright 2021, Ross W
 # LICENSE file in the root directory of this source tree.
 #
 '''These modules are adapted from those of timm, see
-https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/vision_transformer.py
+https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/vision_transformer.py
 '''
 
 from functools import partial

@@ -16,7 +16,7 @@ __all__ = []  # model_registry will add each entrypoint fn to this
 def _gen_hardcorenas(pretrained, variant, arch_def, **kwargs):
     """Creates a hardcorenas model
 
-    Ref impl: https://github.com/Alibaba-MIIL/HardCoReNAS
+    Ref impl: https://mirror.ghproxy.com/https://github.com/Alibaba-MIIL/HardCoReNAS
     Paper: https://arxiv.org/abs/2102.11646
 
     """

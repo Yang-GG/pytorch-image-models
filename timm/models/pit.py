@@ -3,7 +3,7 @@
 A PyTorch implement of Pooling-based Vision Transformers as described in
 'Rethinking Spatial Dimensions of Vision Transformers' - https://arxiv.org/abs/2103.16302
 
-This code was adapted from the original version at https://github.com/naver-ai/pit, original copyright below.
+This code was adapted from the original version at https://mirror.ghproxy.com/https://github.com/naver-ai/pit, original copyright below.
 
 Modifications for timm by / Copyright 2020 Ross Wightman
 """

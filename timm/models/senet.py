@@ -1,12 +1,12 @@
 """
 SEResNet implementation from Cadene's pretrained models
-https://github.com/Cadene/pretrained-models.pytorch/blob/master/pretrainedmodels/models/senet.py
-Additional credit to https://github.com/creafz
+https://mirror.ghproxy.com/https://github.com/Cadene/pretrained-models.pytorch/blob/master/pretrainedmodels/models/senet.py
+Additional credit to https://mirror.ghproxy.com/https://github.com/creafz
 
-Original model: https://github.com/hujie-frank/SENet
+Original model: https://mirror.ghproxy.com/https://github.com/hujie-frank/SENet
 
 ResNet code gently borrowed from
-https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py
+https://mirror.ghproxy.com/https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py
 
 FIXME I'm deprecating this model and moving them to ResNet as I don't want to maintain duplicate
 support for extras like dilation, switchable BN/activations, feature extraction, etc that don't exist here.
@@ -379,25 +379,25 @@ def _cfg(url='', **kwargs):
 
 default_cfgs = generate_default_cfgs({
     'legacy_senet154.in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/legacy_senet154-e9eb9fe6.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/legacy_senet154-e9eb9fe6.pth'),
     'legacy_seresnet18.in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/seresnet18-4bb0ce65.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/seresnet18-4bb0ce65.pth',
         interpolation='bicubic'),
     'legacy_seresnet34.in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/seresnet34-a4004e63.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/seresnet34-a4004e63.pth'),
     'legacy_seresnet50.in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-cadene/se_resnet50-ce0d4300.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-cadene/se_resnet50-ce0d4300.pth'),
     'legacy_seresnet101.in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-cadene/se_resnet101-7e38fcc6.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-cadene/se_resnet101-7e38fcc6.pth'),
     'legacy_seresnet152.in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-cadene/se_resnet152-d17c99b7.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-cadene/se_resnet152-d17c99b7.pth'),
     'legacy_seresnext26_32x4d.in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/seresnext26_32x4d-65ebdb501.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/seresnext26_32x4d-65ebdb501.pth',
         interpolation='bicubic'),
     'legacy_seresnext50_32x4d.in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/legacy_se_resnext50_32x4d-f3651bad.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/legacy_se_resnext50_32x4d-f3651bad.pth'),
     'legacy_seresnext101_32x4d.in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/legacy_se_resnext101_32x4d-37725eac.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/legacy_se_resnext101_32x4d-37725eac.pth'),
 })
 
 

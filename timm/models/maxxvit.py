@@ -3,10 +3,10 @@
 This is a from-scratch implementation of both CoAtNet and MaxVit in PyTorch.
 
 99% of the implementation was done from papers, however last minute some adjustments were made
-based on the (as yet unfinished?) public code release https://github.com/google-research/maxvit
+based on the (as yet unfinished?) public code release https://mirror.ghproxy.com/https://github.com/google-research/maxvit
 
 There are multiple sets of models defined for both architectures. Typically, names with a
- `_rw` suffix are my own original configs prior to referencing https://github.com/google-research/maxvit.
+ `_rw` suffix are my own original configs prior to referencing https://mirror.ghproxy.com/https://github.com/google-research/maxvit.
 These configs work well and appear to be a bit faster / lower resource than the paper.
 
 The models without extra prefix / suffix' (coatnet_0_224, maxvit_tiny_224, etc), are intended to
@@ -1280,7 +1280,7 @@ def _rw_coat_cfg(
         rel_pos_type='bias',
         rel_pos_dim=512,
 ):
-    # 'RW' timm variant models were created and trained before seeing https://github.com/google-research/maxvit
+    # 'RW' timm variant models were created and trained before seeing https://mirror.ghproxy.com/https://github.com/google-research/maxvit
     # Common differences for initial timm models:
     # - pre-norm layer in MZBConv included an activation after norm
     # - mbconv expansion calculated from input instead of output chs
@@ -1332,7 +1332,7 @@ def _rw_max_cfg(
         rel_pos_type='bias',
         rel_pos_dim=512,
 ):
-    # 'RW' timm variant models were created and trained before seeing https://github.com/google-research/maxvit
+    # 'RW' timm variant models were created and trained before seeing https://mirror.ghproxy.com/https://github.com/google-research/maxvit
     # Differences of initial timm models:
     # - mbconv expansion calculated from input instead of output chs
     # - mbconv shortcut and final 1x1 conv did not have a bias
@@ -1837,14 +1837,14 @@ default_cfgs = generate_default_cfgs({
     'coatnet_pico_rw_224.untrained': _cfg(url=''),
     'coatnet_nano_rw_224.sw_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/coatnet_nano_rw_224_sw-f53093b4.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/coatnet_nano_rw_224_sw-f53093b4.pth',
         crop_pct=0.9),
     'coatnet_0_rw_224.sw_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/coatnet_0_rw_224_sw-a6439706.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/coatnet_0_rw_224_sw-a6439706.pth'),
     'coatnet_1_rw_224.sw_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/coatnet_1_rw_224_sw-5cae1ea8.pth'
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/coatnet_1_rw_224_sw-5cae1ea8.pth'
     ),
 
     # timm specific CoAtNet configs, ImageNet-12k pretrain w/ 1k fine-tune, fixed rel-pos
@@ -1864,25 +1864,25 @@ default_cfgs = generate_default_cfgs({
     # Experimental CoAtNet configs w/ ImageNet-1k train (different norm layers, MLP rel-pos)
     'coatnet_bn_0_rw_224.sw_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/coatnet_bn_0_rw_224_sw-c228e218.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/coatnet_bn_0_rw_224_sw-c228e218.pth',
         mean=IMAGENET_DEFAULT_MEAN, std=IMAGENET_DEFAULT_STD,
         crop_pct=0.95),
     'coatnet_rmlp_nano_rw_224.sw_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/coatnet_rmlp_nano_rw_224_sw-bd1d51b3.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/coatnet_rmlp_nano_rw_224_sw-bd1d51b3.pth',
         crop_pct=0.9),
     'coatnet_rmlp_0_rw_224.untrained': _cfg(url=''),
     'coatnet_rmlp_1_rw_224.sw_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/coatnet_rmlp_1_rw_224_sw-9051e6c3.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/coatnet_rmlp_1_rw_224_sw-9051e6c3.pth'),
     'coatnet_rmlp_2_rw_224.sw_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/coatnet_rmlp_2_rw_224_sw-5ccfac55.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/coatnet_rmlp_2_rw_224_sw-5ccfac55.pth'),
     'coatnet_rmlp_3_rw_224.untrained': _cfg(url=''),
     'coatnet_nano_cc_224.untrained': _cfg(url=''),
     'coatnext_nano_rw_224.sw_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/coatnext_nano_rw_224_ad-22cb71c2.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/coatnext_nano_rw_224_ad-22cb71c2.pth',
         crop_pct=0.9),
 
     # ImagenNet-12k pretrain CoAtNet
@@ -1911,11 +1911,11 @@ default_cfgs = generate_default_cfgs({
     'maxvit_pico_rw_256.untrained': _cfg(url='', input_size=(3, 256, 256), pool_size=(8, 8)),
     'maxvit_nano_rw_256.sw_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/maxvit_nano_rw_256_sw-fb127241.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/maxvit_nano_rw_256_sw-fb127241.pth',
         input_size=(3, 256, 256), pool_size=(8, 8)),
     'maxvit_tiny_rw_224.sw_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/maxvit_tiny_rw_224_sw-7d0dffeb.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/maxvit_tiny_rw_224_sw-7d0dffeb.pth'),
     'maxvit_tiny_rw_256.untrained': _cfg(
         url='',
         input_size=(3, 256, 256), pool_size=(8, 8)),
@@ -1924,19 +1924,19 @@ default_cfgs = generate_default_cfgs({
     # timm specific MaxVit w/ MLP rel-pos, ImageNet-1k pretrain
     'maxvit_rmlp_pico_rw_256.sw_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/maxvit_rmlp_pico_rw_256_sw-8d82f2c6.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/maxvit_rmlp_pico_rw_256_sw-8d82f2c6.pth',
         input_size=(3, 256, 256), pool_size=(8, 8)),
     'maxvit_rmlp_nano_rw_256.sw_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/maxvit_rmlp_nano_rw_256_sw-c17bb0d6.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/maxvit_rmlp_nano_rw_256_sw-c17bb0d6.pth',
         input_size=(3, 256, 256), pool_size=(8, 8)),
     'maxvit_rmlp_tiny_rw_256.sw_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/maxvit_rmlp_tiny_rw_256_sw-bbef0ff5.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/maxvit_rmlp_tiny_rw_256_sw-bbef0ff5.pth',
         input_size=(3, 256, 256), pool_size=(8, 8)),
     'maxvit_rmlp_small_rw_224.sw_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/maxvit_rmlp_small_rw_224_sw-6ef0ae4f.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/maxvit_rmlp_small_rw_224_sw-6ef0ae4f.pth',
         crop_pct=0.9,
     ),
     'maxvit_rmlp_small_rw_256.untrained': _cfg(
@@ -1960,12 +1960,12 @@ default_cfgs = generate_default_cfgs({
     # timm MaxxViT configs (ConvNeXt conv blocks mixed with MaxVit transformer blocks)
     'maxxvit_rmlp_nano_rw_256.sw_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/maxxvit_rmlp_nano_rw_256_sw-0325d459.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/maxxvit_rmlp_nano_rw_256_sw-0325d459.pth',
         input_size=(3, 256, 256), pool_size=(8, 8)),
     'maxxvit_rmlp_tiny_rw_256.untrained': _cfg(url='', input_size=(3, 256, 256), pool_size=(8, 8)),
     'maxxvit_rmlp_small_rw_256.sw_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/maxxvit_rmlp_small_rw_256_sw-37e217ff.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights-maxx/maxxvit_rmlp_small_rw_256_sw-37e217ff.pth',
         input_size=(3, 256, 256), pool_size=(8, 8)),
 
     # timm MaxxViT-V2 configs (ConvNeXt conv blocks mixed with MaxVit transformer blocks, more width, no block attn)

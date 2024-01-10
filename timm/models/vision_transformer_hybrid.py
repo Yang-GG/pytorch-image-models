@@ -193,7 +193,7 @@ default_cfgs = generate_default_cfgs({
         input_size=(3, 384, 384), crop_pct=1.0, custom_load=True),
     'vit_base_r26_s32_224.untrained': _cfg(),
     'vit_base_r50_s16_384.orig_in21k_ft_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_base_resnet50_384-9fd3c705.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_base_resnet50_384-9fd3c705.pth',
         hf_hub_id='timm/',
         input_size=(3, 384, 384), crop_pct=1.0),
     'vit_large_r50_s32_224.augreg_in21k_ft_in1k': _cfg(
@@ -217,7 +217,7 @@ default_cfgs = generate_default_cfgs({
         hf_hub_id='timm/',
         num_classes=21843, crop_pct=0.9, custom_load=True),
     'vit_base_r50_s16_224.orig_in21k': _cfg(
-        #url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_base_resnet50_224_in21k-6f7c7740.pth',
+        #url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_base_resnet50_224_in21k-6f7c7740.pth',
         hf_hub_id='timm/',
         num_classes=0, crop_pct=0.9),
     'vit_large_r50_s32_224.augreg_in21k': _cfg(
@@ -306,7 +306,7 @@ def vit_base_r50_s16_224(pretrained=False, **kwargs) -> VisionTransformer:
 @register_model
 def vit_base_r50_s16_384(pretrained=False, **kwargs) -> VisionTransformer:
     """ R50+ViT-B/16 hybrid from original paper (https://arxiv.org/abs/2010.11929).
-    ImageNet-1k weights fine-tuned from in21k @ 384x384, source https://github.com/google-research/vision_transformer.
+    ImageNet-1k weights fine-tuned from in21k @ 384x384, source https://mirror.ghproxy.com/https://github.com/google-research/vision_transformer.
     """
     backbone = _resnetv2((3, 4, 9), **kwargs)
     model_args = dict(embed_dim=768, depth=12, num_heads=12)

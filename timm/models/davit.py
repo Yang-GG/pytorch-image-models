@@ -5,7 +5,7 @@ As described in https://arxiv.org/abs/2204.03645
 Input size invariant transformer architecture that combines channel and spacial
 attention in each block. The attention mechanisms used are linear in complexity.
 
-DaViT model defs and weights adapted from https://github.com/dingmyu/davit, original copyright below
+DaViT model defs and weights adapted from https://mirror.ghproxy.com/https://github.com/dingmyu/davit, original copyright below
 
 """
 # Copyright (c) 2022 Mingyu Ding
@@ -629,7 +629,7 @@ def _cfg(url='', **kwargs):
 
 # TODO contact authors to get larger pretrained models
 default_cfgs = generate_default_cfgs({
-    # official microsoft weights from https://github.com/dingmyu/davit
+    # official microsoft weights from https://mirror.ghproxy.com/https://github.com/dingmyu/davit
     'davit_tiny.msft_in1k': _cfg(
         hf_hub_id='timm/'),
     'davit_small.msft_in1k': _cfg(

@@ -18,8 +18,8 @@ Papers:
 }
 
 Original code and weights from:
-* https://github.com/facebookresearch/ConvNeXt, original copyright below
-* https://github.com/facebookresearch/ConvNeXt-V2, original copyright below
+* https://mirror.ghproxy.com/https://github.com/facebookresearch/ConvNeXt, original copyright below
+* https://mirror.ghproxy.com/https://github.com/facebookresearch/ConvNeXt-V2, original copyright below
 
 Model defs atto, femto, pico, nano and _ols / _hnf variants are timm originals.
 
@@ -511,7 +511,7 @@ def _cfgv2(url='', **kwargs):
         'first_conv': 'stem.0', 'classifier': 'head.fc',
         'license': 'cc-by-nc-4.0', 'paper_ids': 'arXiv:2301.00808',
         'paper_name': 'ConvNeXt-V2: Co-designing and Scaling ConvNets with Masked Autoencoders',
-        'origin_url': 'https://github.com/facebookresearch/ConvNeXt-V2',
+        'origin_url': 'https://mirror.ghproxy.com/https://github.com/facebookresearch/ConvNeXt-V2',
         **kwargs
     }
 
@@ -526,42 +526,42 @@ default_cfgs = generate_default_cfgs({
         crop_pct=0.95, test_input_size=(3, 288, 288), test_crop_pct=1.0),
 
     'convnext_atto.d2_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/convnext_atto_d2-01bb0f51.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/convnext_atto_d2-01bb0f51.pth',
         hf_hub_id='timm/',
         test_input_size=(3, 288, 288), test_crop_pct=0.95),
     'convnext_atto_ols.a2_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/convnext_atto_ols_a2-78d1c8f3.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/convnext_atto_ols_a2-78d1c8f3.pth',
         hf_hub_id='timm/',
         test_input_size=(3, 288, 288), test_crop_pct=0.95),
     'convnext_femto.d1_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/convnext_femto_d1-d71d5b4c.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/convnext_femto_d1-d71d5b4c.pth',
         hf_hub_id='timm/',
         test_input_size=(3, 288, 288), test_crop_pct=0.95),
     'convnext_femto_ols.d1_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/convnext_femto_ols_d1-246bf2ed.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/convnext_femto_ols_d1-246bf2ed.pth',
         hf_hub_id='timm/',
         test_input_size=(3, 288, 288), test_crop_pct=0.95),
     'convnext_pico.d1_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/convnext_pico_d1-10ad7f0d.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/convnext_pico_d1-10ad7f0d.pth',
         hf_hub_id='timm/',
         test_input_size=(3, 288, 288), test_crop_pct=0.95),
     'convnext_pico_ols.d1_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/convnext_pico_ols_d1-611f0ca7.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/convnext_pico_ols_d1-611f0ca7.pth',
         hf_hub_id='timm/',
         crop_pct=0.95, test_input_size=(3, 288, 288), test_crop_pct=1.0),
     'convnext_nano.in12k_ft_in1k': _cfg(
         hf_hub_id='timm/',
         crop_pct=0.95, test_input_size=(3, 288, 288), test_crop_pct=1.0),
     'convnext_nano.d1h_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/convnext_nano_d1h-7eb4bdea.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/convnext_nano_d1h-7eb4bdea.pth',
         hf_hub_id='timm/',
         crop_pct=0.95, test_input_size=(3, 288, 288), test_crop_pct=1.0),
     'convnext_nano_ols.d1h_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/convnext_nano_ols_d1h-ae424a9a.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/convnext_nano_ols_d1h-ae424a9a.pth',
         hf_hub_id='timm/',
         crop_pct=0.95, test_input_size=(3, 288, 288), test_crop_pct=1.0),
     'convnext_tiny_hnf.a2h_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/convnext_tiny_hnf_a2h-ab7e9df2.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/convnext_tiny_hnf_a2h-ab7e9df2.pth',
         hf_hub_id='timm/',
         crop_pct=0.95, test_input_size=(3, 288, 288), test_crop_pct=1.0),
 

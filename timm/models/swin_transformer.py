@@ -2,10 +2,10 @@
 A PyTorch impl of : `Swin Transformer: Hierarchical Vision Transformer using Shifted Windows`
     - https://arxiv.org/pdf/2103.14030
 
-Code/weights from https://github.com/microsoft/Swin-Transformer, original copyright/license info below
+Code/weights from https://mirror.ghproxy.com/https://github.com/microsoft/Swin-Transformer, original copyright/license info below
 
 S3 (AutoFormerV2, https://arxiv.org/abs/2111.14725) Swin weights from
-    - https://github.com/microsoft/Cream/tree/main/AutoFormerV2
+    - https://mirror.ghproxy.com/https://github.com/microsoft/Cream/tree/main/AutoFormerV2
 
 Modifications and additions for timm hacked together by / Copyright 2021, Ross Wightman
 """
@@ -690,75 +690,75 @@ def _cfg(url='', **kwargs):
 default_cfgs = generate_default_cfgs({
     'swin_small_patch4_window7_224.ms_in22k_ft_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/SwinTransformer/storage/releases/download/v1.0.8/swin_small_patch4_window7_224_22kto1k_finetune.pth', ),
+        url='https://mirror.ghproxy.com/https://github.com/SwinTransformer/storage/releases/download/v1.0.8/swin_small_patch4_window7_224_22kto1k_finetune.pth', ),
     'swin_base_patch4_window7_224.ms_in22k_ft_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224_22kto1k.pth',),
+        url='https://mirror.ghproxy.com/https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224_22kto1k.pth',),
     'swin_base_patch4_window12_384.ms_in22k_ft_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window12_384_22kto1k.pth',
+        url='https://mirror.ghproxy.com/https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window12_384_22kto1k.pth',
         input_size=(3, 384, 384), pool_size=(12, 12), crop_pct=1.0),
     'swin_large_patch4_window7_224.ms_in22k_ft_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_large_patch4_window7_224_22kto1k.pth',),
+        url='https://mirror.ghproxy.com/https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_large_patch4_window7_224_22kto1k.pth',),
     'swin_large_patch4_window12_384.ms_in22k_ft_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_large_patch4_window12_384_22kto1k.pth',
+        url='https://mirror.ghproxy.com/https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_large_patch4_window12_384_22kto1k.pth',
         input_size=(3, 384, 384), pool_size=(12, 12), crop_pct=1.0),
 
     'swin_tiny_patch4_window7_224.ms_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_tiny_patch4_window7_224.pth',),
+        url='https://mirror.ghproxy.com/https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_tiny_patch4_window7_224.pth',),
     'swin_small_patch4_window7_224.ms_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_small_patch4_window7_224.pth',),
+        url='https://mirror.ghproxy.com/https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_small_patch4_window7_224.pth',),
     'swin_base_patch4_window7_224.ms_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224.pth',),
+        url='https://mirror.ghproxy.com/https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224.pth',),
     'swin_base_patch4_window12_384.ms_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window12_384.pth',
+        url='https://mirror.ghproxy.com/https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window12_384.pth',
         input_size=(3, 384, 384), pool_size=(12, 12), crop_pct=1.0),
 
     # tiny 22k pretrain is worse than 1k, so moved after (untagged priority is based on order)
     'swin_tiny_patch4_window7_224.ms_in22k_ft_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/SwinTransformer/storage/releases/download/v1.0.8/swin_tiny_patch4_window7_224_22kto1k_finetune.pth',),
+        url='https://mirror.ghproxy.com/https://github.com/SwinTransformer/storage/releases/download/v1.0.8/swin_tiny_patch4_window7_224_22kto1k_finetune.pth',),
 
     'swin_tiny_patch4_window7_224.ms_in22k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/SwinTransformer/storage/releases/download/v1.0.8/swin_tiny_patch4_window7_224_22k.pth',
+        url='https://mirror.ghproxy.com/https://github.com/SwinTransformer/storage/releases/download/v1.0.8/swin_tiny_patch4_window7_224_22k.pth',
         num_classes=21841),
     'swin_small_patch4_window7_224.ms_in22k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/SwinTransformer/storage/releases/download/v1.0.8/swin_small_patch4_window7_224_22k.pth',
+        url='https://mirror.ghproxy.com/https://github.com/SwinTransformer/storage/releases/download/v1.0.8/swin_small_patch4_window7_224_22k.pth',
         num_classes=21841),
     'swin_base_patch4_window7_224.ms_in22k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224_22k.pth',
+        url='https://mirror.ghproxy.com/https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224_22k.pth',
         num_classes=21841),
     'swin_base_patch4_window12_384.ms_in22k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window12_384_22k.pth',
+        url='https://mirror.ghproxy.com/https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window12_384_22k.pth',
         input_size=(3, 384, 384), pool_size=(12, 12), crop_pct=1.0, num_classes=21841),
     'swin_large_patch4_window7_224.ms_in22k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_large_patch4_window7_224_22k.pth',
+        url='https://mirror.ghproxy.com/https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_large_patch4_window7_224_22k.pth',
         num_classes=21841),
     'swin_large_patch4_window12_384.ms_in22k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_large_patch4_window12_384_22k.pth',
+        url='https://mirror.ghproxy.com/https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_large_patch4_window12_384_22k.pth',
         input_size=(3, 384, 384), pool_size=(12, 12), crop_pct=1.0, num_classes=21841),
 
     'swin_s3_tiny_224.ms_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/s3_t-1d53f6a8.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/s3_t-1d53f6a8.pth'),
     'swin_s3_small_224.ms_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/s3_s-3bb4c69d.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/s3_s-3bb4c69d.pth'),
     'swin_s3_base_224.ms_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/s3_b-a1e95db4.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/s3_b-a1e95db4.pth'),
 })
 
 

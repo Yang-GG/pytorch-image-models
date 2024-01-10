@@ -6,7 +6,7 @@ Paper: `Characterizing signal propagation to close the performance gap in unnorm
 Paper: `High-Performance Large-Scale Image Recognition Without Normalization`
     - https://arxiv.org/abs/2102.06171
 
-Official Deepmind JAX code: https://github.com/deepmind/deepmind-research/tree/master/nfnets
+Official Deepmind JAX code: https://mirror.ghproxy.com/https://github.com/deepmind/deepmind-research/tree/master/nfnets
 
 Status:
 * These models are a work in progress, experiments ongoing.
@@ -101,7 +101,7 @@ class DownsampleAvg(nn.Module):
         return self.conv(self.pool(x))
 
 
-@register_notrace_module  # reason: mul_ causes FX to drop a relevant node. https://github.com/pytorch/pytorch/issues/68301
+@register_notrace_module  # reason: mul_ causes FX to drop a relevant node. https://mirror.ghproxy.com/https://github.com/pytorch/pytorch/issues/68301
 class NormFreeBlock(nn.Module):
     """Normalization-Free pre-activation block.
     """
@@ -247,7 +247,7 @@ def create_stem(
     return nn.Sequential(stem), stem_stride, stem_feature
 
 
-# from https://github.com/deepmind/deepmind-research/tree/master/nfnets
+# from https://mirror.ghproxy.com/https://github.com/deepmind/deepmind-research/tree/master/nfnets
 _nonlin_gamma = dict(
     identity=1.0,
     celu=1.270926833152771,
@@ -636,31 +636,31 @@ def _dcfg(url='', **kwargs):
 default_cfgs = generate_default_cfgs({
     'dm_nfnet_f0.dm_in1k': _dcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-dnf-weights/dm_nfnet_f0-604f9c3a.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-dnf-weights/dm_nfnet_f0-604f9c3a.pth',
         pool_size=(6, 6), input_size=(3, 192, 192), test_input_size=(3, 256, 256), crop_pct=.9, crop_mode='squash'),
     'dm_nfnet_f1.dm_in1k': _dcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-dnf-weights/dm_nfnet_f1-fc540f82.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-dnf-weights/dm_nfnet_f1-fc540f82.pth',
         pool_size=(7, 7), input_size=(3, 224, 224), test_input_size=(3, 320, 320), crop_pct=0.91, crop_mode='squash'),
     'dm_nfnet_f2.dm_in1k': _dcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-dnf-weights/dm_nfnet_f2-89875923.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-dnf-weights/dm_nfnet_f2-89875923.pth',
         pool_size=(8, 8), input_size=(3, 256, 256), test_input_size=(3, 352, 352), crop_pct=0.92, crop_mode='squash'),
     'dm_nfnet_f3.dm_in1k': _dcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-dnf-weights/dm_nfnet_f3-d74ab3aa.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-dnf-weights/dm_nfnet_f3-d74ab3aa.pth',
         pool_size=(10, 10), input_size=(3, 320, 320), test_input_size=(3, 416, 416), crop_pct=0.94, crop_mode='squash'),
     'dm_nfnet_f4.dm_in1k': _dcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-dnf-weights/dm_nfnet_f4-0ac5b10b.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-dnf-weights/dm_nfnet_f4-0ac5b10b.pth',
         pool_size=(12, 12), input_size=(3, 384, 384), test_input_size=(3, 512, 512), crop_pct=0.951, crop_mode='squash'),
     'dm_nfnet_f5.dm_in1k': _dcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-dnf-weights/dm_nfnet_f5-ecb20ab1.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-dnf-weights/dm_nfnet_f5-ecb20ab1.pth',
         pool_size=(13, 13), input_size=(3, 416, 416), test_input_size=(3, 544, 544), crop_pct=0.954, crop_mode='squash'),
     'dm_nfnet_f6.dm_in1k': _dcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-dnf-weights/dm_nfnet_f6-e0f12116.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-dnf-weights/dm_nfnet_f6-e0f12116.pth',
         pool_size=(14, 14), input_size=(3, 448, 448), test_input_size=(3, 576, 576), crop_pct=0.956, crop_mode='squash'),
 
     'nfnet_f0': _dcfg(
@@ -682,19 +682,19 @@ default_cfgs = generate_default_cfgs({
 
     'nfnet_l0.ra2_in1k': _dcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/nfnet_l0_ra2-45c6688d.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/nfnet_l0_ra2-45c6688d.pth',
         pool_size=(7, 7), input_size=(3, 224, 224), test_input_size=(3, 288, 288), test_crop_pct=1.0),
     'eca_nfnet_l0.ra2_in1k': _dcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/ecanfnet_l0_ra2-e3e9ac50.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/ecanfnet_l0_ra2-e3e9ac50.pth',
         pool_size=(7, 7), input_size=(3, 224, 224), test_input_size=(3, 288, 288), test_crop_pct=1.0),
     'eca_nfnet_l1.ra2_in1k': _dcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/ecanfnet_l1_ra2-7dce93cd.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/ecanfnet_l1_ra2-7dce93cd.pth',
         pool_size=(8, 8), input_size=(3, 256, 256), test_input_size=(3, 320, 320), test_crop_pct=1.0),
     'eca_nfnet_l2.ra3_in1k': _dcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/ecanfnet_l2_ra3-da781a61.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/ecanfnet_l2_ra3-da781a61.pth',
         pool_size=(10, 10), input_size=(3, 320, 320), test_input_size=(3, 384, 384), test_crop_pct=1.0),
     'eca_nfnet_l3': _dcfg(
         url='',
@@ -704,7 +704,7 @@ default_cfgs = generate_default_cfgs({
         url='', pool_size=(6, 6), input_size=(3, 192, 192), test_input_size=(3, 256, 256), first_conv='stem.conv'),
     'nf_regnet_b1.ra2_in1k': _dcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/nf_regnet_b1_256_ra2-ad85cfef.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/nf_regnet_b1_256_ra2-ad85cfef.pth',
         pool_size=(8, 8), input_size=(3, 256, 256), test_input_size=(3, 288, 288), first_conv='stem.conv'),  # NOT to paper spec
     'nf_regnet_b2': _dcfg(
         url='', pool_size=(8, 8), input_size=(3, 240, 240), test_input_size=(3, 272, 272), first_conv='stem.conv'),
@@ -718,7 +718,7 @@ default_cfgs = generate_default_cfgs({
     'nf_resnet26': _dcfg(url='', first_conv='stem.conv'),
     'nf_resnet50.ra2_in1k': _dcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/nf_resnet50_ra2-9f236009.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/nf_resnet50_ra2-9f236009.pth',
         pool_size=(8, 8), input_size=(3, 256, 256), test_input_size=(3, 288, 288), crop_pct=0.94, first_conv='stem.conv'),
     'nf_resnet101': _dcfg(url='', first_conv='stem.conv'),
 

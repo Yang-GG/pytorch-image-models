@@ -3,7 +3,7 @@
 Paper: Selective Kernel Networks (https://arxiv.org/abs/1903.06586)
 
 This was inspired by reading 'Compounding the Performance Improvements...' (https://arxiv.org/abs/2001.06268)
-and a streamlined impl at https://github.com/clovaai/assembled-cnn but I ended up building something closer
+and a streamlined impl at https://mirror.ghproxy.com/https://github.com/clovaai/assembled-cnn but I ended up building something closer
 to the original paper with some modifications of my own to better balance param count vs accuracy.
 
 Hacked together by / Copyright 2020 Ross Wightman

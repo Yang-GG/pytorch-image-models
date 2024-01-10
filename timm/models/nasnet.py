@@ -1,6 +1,6 @@
 """ NasNet-A (Large)
  nasnetalarge implementation grabbed from Cadene's pretrained models
- https://github.com/Cadene/pretrained-models.pytorch
+ https://mirror.ghproxy.com/https://github.com/Cadene/pretrained-models.pytorch
 """
 from functools import partial
 
@@ -578,7 +578,7 @@ def _create_nasnet(variant, pretrained=False, **kwargs):
 default_cfgs = generate_default_cfgs({
     'nasnetalarge.tf_in1k': {
         'hf_hub_id': 'timm/',
-        'url': 'https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/nasnetalarge-dc4a7b8b.pth',
+        'url': 'https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/nasnetalarge-dc4a7b8b.pth',
         'input_size': (3, 331, 331),
         'pool_size': (11, 11),
         'crop_pct': 0.911,

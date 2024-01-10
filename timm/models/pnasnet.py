@@ -1,8 +1,8 @@
 """
  pnasnet5large implementation grabbed from Cadene's pretrained models
- Additional credit to https://github.com/creafz
+ Additional credit to https://mirror.ghproxy.com/https://github.com/creafz
 
- https://github.com/Cadene/pretrained-models.pytorch/blob/master/pretrainedmodels/models/pnasnet.py
+ https://mirror.ghproxy.com/https://github.com/Cadene/pretrained-models.pytorch/blob/master/pretrainedmodels/models/pnasnet.py
 
 """
 from collections import OrderedDict

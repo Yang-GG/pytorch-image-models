@@ -3,7 +3,7 @@
 Paper: `EfficientViT: Memory Efficient Vision Transformer with Cascaded Group Attention`
     - https://arxiv.org/abs/2305.07027
 
-Adapted from official impl at https://github.com/microsoft/Cream/tree/main/EfficientViT
+Adapted from official impl at https://mirror.ghproxy.com/https://github.com/microsoft/Cream/tree/main/EfficientViT
 """
 
 __all__ = ['EfficientVitMsra']
@@ -544,27 +544,27 @@ def _cfg(url='', **kwargs):
 default_cfgs = generate_default_cfgs({
     'efficientvit_m0.r224_in1k': _cfg(
         hf_hub_id='timm/',
-        #url='https://github.com/xinyuliu-jeffrey/EfficientVit_Model_Zoo/releases/download/v1.0/efficientvit_m0.pth'
+        #url='https://mirror.ghproxy.com/https://github.com/xinyuliu-jeffrey/EfficientVit_Model_Zoo/releases/download/v1.0/efficientvit_m0.pth'
     ),
     'efficientvit_m1.r224_in1k': _cfg(
         hf_hub_id='timm/',
-        #url='https://github.com/xinyuliu-jeffrey/EfficientVit_Model_Zoo/releases/download/v1.0/efficientvit_m1.pth'
+        #url='https://mirror.ghproxy.com/https://github.com/xinyuliu-jeffrey/EfficientVit_Model_Zoo/releases/download/v1.0/efficientvit_m1.pth'
     ),
     'efficientvit_m2.r224_in1k': _cfg(
         hf_hub_id='timm/',
-        #url='https://github.com/xinyuliu-jeffrey/EfficientVit_Model_Zoo/releases/download/v1.0/efficientvit_m2.pth'
+        #url='https://mirror.ghproxy.com/https://github.com/xinyuliu-jeffrey/EfficientVit_Model_Zoo/releases/download/v1.0/efficientvit_m2.pth'
     ),
     'efficientvit_m3.r224_in1k': _cfg(
         hf_hub_id='timm/',
-        #url='https://github.com/xinyuliu-jeffrey/EfficientVit_Model_Zoo/releases/download/v1.0/efficientvit_m3.pth'
+        #url='https://mirror.ghproxy.com/https://github.com/xinyuliu-jeffrey/EfficientVit_Model_Zoo/releases/download/v1.0/efficientvit_m3.pth'
     ),
     'efficientvit_m4.r224_in1k': _cfg(
         hf_hub_id='timm/',
-        #url='https://github.com/xinyuliu-jeffrey/EfficientVit_Model_Zoo/releases/download/v1.0/efficientvit_m4.pth'
+        #url='https://mirror.ghproxy.com/https://github.com/xinyuliu-jeffrey/EfficientVit_Model_Zoo/releases/download/v1.0/efficientvit_m4.pth'
     ),
     'efficientvit_m5.r224_in1k': _cfg(
         hf_hub_id='timm/',
-        #url='https://github.com/xinyuliu-jeffrey/EfficientVit_Model_Zoo/releases/download/v1.0/efficientvit_m5.pth'
+        #url='https://mirror.ghproxy.com/https://github.com/xinyuliu-jeffrey/EfficientVit_Model_Zoo/releases/download/v1.0/efficientvit_m5.pth'
     ),
 })
 

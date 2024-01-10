@@ -2,7 +2,7 @@
 
 This impl originally based on MLP-Mixer paper.
 
-Official JAX impl: https://github.com/google-research/vision_transformer/blob/linen/vit_jax/models_mixer.py
+Official JAX impl: https://mirror.ghproxy.com/https://github.com/google-research/vision_transformer/blob/linen/vit_jax/models_mixer.py
 
 Paper: 'MLP-Mixer: An all-MLP Architecture for Vision' - https://arxiv.org/abs/2105.01601
 
@@ -16,7 +16,7 @@ Paper: 'MLP-Mixer: An all-MLP Architecture for Vision' - https://arxiv.org/abs/2
 
 Also supporting ResMlp, and a preliminary (not verified) implementations of gMLP
 
-Code: https://github.com/facebookresearch/deit
+Code: https://mirror.ghproxy.com/https://github.com/facebookresearch/deit
 Paper: `ResMLP: Feedforward networks for image classification...` - https://arxiv.org/abs/2105.03404
 @misc{touvron2021resmlp,
       title={ResMLP: Feedforward networks for image classification with data-efficient training},
@@ -360,40 +360,40 @@ default_cfgs = generate_default_cfgs({
     'mixer_b32_224.untrained': _cfg(),
     'mixer_b16_224.goog_in21k_ft_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_mixer_b16_224-76587d61.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_mixer_b16_224-76587d61.pth',
     ),
     'mixer_b16_224.goog_in21k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_mixer_b16_224_in21k-617b3de2.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_mixer_b16_224_in21k-617b3de2.pth',
         num_classes=21843
     ),
     'mixer_l32_224.untrained': _cfg(),
     'mixer_l16_224.goog_in21k_ft_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_mixer_l16_224-92f9adc4.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_mixer_l16_224-92f9adc4.pth',
     ),
     'mixer_l16_224.goog_in21k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_mixer_l16_224_in21k-846aa33c.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_mixer_l16_224_in21k-846aa33c.pth',
         num_classes=21843
     ),
 
     # Mixer ImageNet-21K-P pretraining
     'mixer_b16_224.miil_in21k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/mixer_b16_224_miil_in21k-2a558a71.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/mixer_b16_224_miil_in21k-2a558a71.pth',
         mean=(0., 0., 0.), std=(1., 1., 1.), crop_pct=0.875, interpolation='bilinear', num_classes=11221,
     ),
     'mixer_b16_224.miil_in21k_ft_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/mixer_b16_224_miil-9229a591.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/mixer_b16_224_miil-9229a591.pth',
         mean=(0., 0., 0.), std=(1., 1., 1.), crop_pct=0.875, interpolation='bilinear',
     ),
 
     'gmixer_12_224.untrained': _cfg(mean=IMAGENET_DEFAULT_MEAN, std=IMAGENET_DEFAULT_STD),
     'gmixer_24_224.ra3_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/gmixer_24_224_raa-7daf7ae6.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/gmixer_24_224_raa-7daf7ae6.pth',
         mean=IMAGENET_DEFAULT_MEAN, std=IMAGENET_DEFAULT_STD),
 
     'resmlp_12_224.fb_in1k': _cfg(
@@ -403,7 +403,7 @@ default_cfgs = generate_default_cfgs({
     'resmlp_24_224.fb_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://dl.fbaipublicfiles.com/deit/resmlp_24_no_dist.pth',
-        #url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resmlp_24_224_raa-a8256759.pth',
+        #url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resmlp_24_224_raa-a8256759.pth',
         mean=IMAGENET_DEFAULT_MEAN, std=IMAGENET_DEFAULT_STD),
     'resmlp_36_224.fb_in1k': _cfg(
         hf_hub_id='timm/',
@@ -448,7 +448,7 @@ default_cfgs = generate_default_cfgs({
     'gmlp_ti16_224.untrained': _cfg(),
     'gmlp_s16_224.ra3_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/gmlp_s16_224_raa-10536d42.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/gmlp_s16_224_raa-10536d42.pth',
     ),
     'gmlp_b16_224.untrained': _cfg(),
 })

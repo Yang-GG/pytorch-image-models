@@ -2,7 +2,7 @@
 A PyTorch impl of : `Twins: Revisiting the Design of Spatial Attention in Vision Transformers`
     - https://arxiv.org/pdf/2104.13840.pdf
 
-Code/weights from https://github.com/Meituan-AutoML/Twins, original copyright/license info below
+Code/weights from https://mirror.ghproxy.com/https://github.com/Meituan-AutoML/Twins, original copyright/license info below
 
 """
 # --------------------------------------------------------
@@ -281,7 +281,7 @@ class PatchEmbed(nn.Module):
 class Twins(nn.Module):
     """ Twins Vision Transfomer (Revisiting Spatial Attention)
 
-    Adapted from PVT (PyramidVisionTransformer) class at https://github.com/whai362/PVT.git
+    Adapted from PVT (PyramidVisionTransformer) class at https://mirror.ghproxy.com/https://github.com/whai362/PVT.git
     """
     def __init__(
             self,

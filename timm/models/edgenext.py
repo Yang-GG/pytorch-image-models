@@ -3,7 +3,7 @@
 Paper: `EdgeNeXt: Efficiently Amalgamated CNN-Transformer Architecture for Mobile Vision Applications`
  - https://arxiv.org/abs/2206.10589
 
-Original code and weights from https://github.com/mmaaz60/EdgeNeXt
+Original code and weights from https://mirror.ghproxy.com/https://github.com/mmaaz60/EdgeNeXt
 
 Modifications and additions for timm by / Copyright 2022, Ross Wightman
 """

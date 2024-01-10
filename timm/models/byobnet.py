@@ -6,15 +6,15 @@ This model is currently used to implement the following networks:
 
 GPU Efficient (ResNets) - gernet_l/m/s (original versions called genet, but this was already used (by SENet author)).
 Paper: `Neural Architecture Design for GPU-Efficient Networks` - https://arxiv.org/abs/2006.14090
-Code and weights: https://github.com/idstcv/GPU-Efficient-Networks, licensed Apache 2.0
+Code and weights: https://mirror.ghproxy.com/https://github.com/idstcv/GPU-Efficient-Networks, licensed Apache 2.0
 
 RepVGG - repvgg_*
 Paper: `Making VGG-style ConvNets Great Again` - https://arxiv.org/abs/2101.03697
-Code and weights: https://github.com/DingXiaoH/RepVGG, licensed MIT
+Code and weights: https://mirror.ghproxy.com/https://github.com/DingXiaoH/RepVGG, licensed MIT
 
 MobileOne - mobileone_*
 Paper: `MobileOne: An Improved One millisecond Mobile Backbone` - https://arxiv.org/abs/2206.04040
-Code and weights: https://github.com/apple/ml-mobileone, licensed MIT
+Code and weights: https://mirror.ghproxy.com/https://github.com/apple/ml-mobileone, licensed MIT
 
 In all cases the models have been modified to fit within the design of ByobNet. I've remapped
 the original weights and verified accuracies.
@@ -471,7 +471,7 @@ class EdgeBlock(nn.Module):
 class RepVggBlock(nn.Module):
     """ RepVGG Block.
 
-    Adapted from impl at https://github.com/DingXiaoH/RepVGG
+    Adapted from impl at https://mirror.ghproxy.com/https://github.com/DingXiaoH/RepVGG
     """
 
     def __init__(
@@ -575,7 +575,7 @@ class RepVggBlock(nn.Module):
 
     def _get_kernel_bias(self) -> Tuple[torch.Tensor, torch.Tensor]:
         """ Method to obtain re-parameterized kernel and bias.
-        Reference: https://github.com/DingXiaoH/RepVGG/blob/main/repvgg.py#L83
+        Reference: https://mirror.ghproxy.com/https://github.com/DingXiaoH/RepVGG/blob/main/repvgg.py#L83
         """
         # get weights and bias of scale branch
         kernel_1x1 = 0
@@ -601,7 +601,7 @@ class RepVggBlock(nn.Module):
 
     def _fuse_bn_tensor(self, branch) -> Tuple[torch.Tensor, torch.Tensor]:
         """ Method to fuse batchnorm layer with preceeding conv layer.
-        Reference: https://github.com/DingXiaoH/RepVGG/blob/main/repvgg.py#L95
+        Reference: https://mirror.ghproxy.com/https://github.com/DingXiaoH/RepVGG/blob/main/repvgg.py#L95
         """
         if isinstance(branch, ConvNormAct):
             kernel = branch.conv.weight
@@ -759,7 +759,7 @@ class MobileOneBlock(nn.Module):
 
     def _get_kernel_bias(self) -> Tuple[torch.Tensor, torch.Tensor]:
         """ Method to obtain re-parameterized kernel and bias.
-        Reference: https://github.com/DingXiaoH/RepVGG/blob/main/repvgg.py#L83
+        Reference: https://mirror.ghproxy.com/https://github.com/DingXiaoH/RepVGG/blob/main/repvgg.py#L83
         """
         # get weights and bias of scale branch
         kernel_scale = 0
@@ -790,7 +790,7 @@ class MobileOneBlock(nn.Module):
 
     def _fuse_bn_tensor(self, branch) -> Tuple[torch.Tensor, torch.Tensor]:
         """ Method to fuse batchnorm layer with preceeding conv layer.
-        Reference: https://github.com/DingXiaoH/RepVGG/blob/main/repvgg.py#L95
+        Reference: https://mirror.ghproxy.com/https://github.com/DingXiaoH/RepVGG/blob/main/repvgg.py#L95
         """
         if isinstance(branch, ConvNormAct):
             kernel = branch.conv.weight
@@ -1817,90 +1817,90 @@ default_cfgs = generate_default_cfgs({
     # experimental ResNet configs
     'resnet51q.ra2_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet51q_ra2-d47dcc76.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet51q_ra2-d47dcc76.pth',
         first_conv='stem.conv1', input_size=(3, 256, 256), pool_size=(8, 8),
         test_input_size=(3, 288, 288), test_crop_pct=1.0),
     'resnet61q.ra2_in1k': _cfgr(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet61q_ra2-6afc536c.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet61q_ra2-6afc536c.pth',
         test_input_size=(3, 288, 288), test_crop_pct=1.0),
 
     # ResNeXt-26 models with different attention in Bottleneck blocks
     'resnext26ts.ra2_in1k': _cfgr(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/resnext26ts_256_ra2-8bbd9106.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/resnext26ts_256_ra2-8bbd9106.pth',
         test_input_size=(3, 288, 288), test_crop_pct=1.0),
     'seresnext26ts.ch_in1k': _cfgr(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/seresnext26ts_256-6f0d74a3.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/seresnext26ts_256-6f0d74a3.pth',
         test_input_size=(3, 288, 288), test_crop_pct=1.0),
     'gcresnext26ts.ch_in1k': _cfgr(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/gcresnext26ts_256-e414378b.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/gcresnext26ts_256-e414378b.pth',
         test_input_size=(3, 288, 288), test_crop_pct=1.0),
     'eca_resnext26ts.ch_in1k': _cfgr(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/eca_resnext26ts_256-5a1d030f.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/eca_resnext26ts_256-5a1d030f.pth',
         test_input_size=(3, 288, 288), test_crop_pct=1.0),
     'bat_resnext26ts.ch_in1k': _cfgr(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/bat_resnext26ts_256-fa6fd595.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/bat_resnext26ts_256-fa6fd595.pth',
         min_input_size=(3, 256, 256)),
 
     # ResNet-32 / 33 models with different attention in Bottleneck blocks
     'resnet32ts.ra2_in1k': _cfgr(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/resnet32ts_256-aacf5250.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/resnet32ts_256-aacf5250.pth',
         test_input_size=(3, 288, 288), test_crop_pct=1.0),
     'resnet33ts.ra2_in1k': _cfgr(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/resnet33ts_256-e91b09a4.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/resnet33ts_256-e91b09a4.pth',
         test_input_size=(3, 288, 288), test_crop_pct=1.0),
     'gcresnet33ts.ra2_in1k': _cfgr(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/gcresnet33ts_256-0e0cd345.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/gcresnet33ts_256-0e0cd345.pth',
         test_input_size=(3, 288, 288), test_crop_pct=1.0),
     'seresnet33ts.ra2_in1k': _cfgr(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/seresnet33ts_256-f8ad44d9.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/seresnet33ts_256-f8ad44d9.pth',
         test_input_size=(3, 288, 288), test_crop_pct=1.0),
     'eca_resnet33ts.ra2_in1k': _cfgr(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/eca_resnet33ts_256-8f98face.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/eca_resnet33ts_256-8f98face.pth',
         test_input_size=(3, 288, 288), test_crop_pct=1.0),
 
     'gcresnet50t.ra2_in1k': _cfgr(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/gcresnet50t_256-96374d1c.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/gcresnet50t_256-96374d1c.pth',
         test_input_size=(3, 288, 288), test_crop_pct=1.0),
 
     'gcresnext50ts.ch_in1k': _cfgr(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/gcresnext50ts_256-3e0f515e.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/gcresnext50ts_256-3e0f515e.pth',
         test_input_size=(3, 288, 288), test_crop_pct=1.0),
 
     # custom `timm` specific RegNetZ inspired models w/ different sizing from paper
     'regnetz_b16.ra3_in1k': _cfgr(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/regnetz_b_raa-677d9606.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/regnetz_b_raa-677d9606.pth',
         first_conv='stem.conv', mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5),
         input_size=(3, 224, 224), pool_size=(7, 7), crop_pct=0.94, test_input_size=(3, 288, 288), test_crop_pct=1.0),
     'regnetz_c16.ra3_in1k': _cfgr(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/regnetz_c_rab2_256-a54bf36a.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/regnetz_c_rab2_256-a54bf36a.pth',
         first_conv='stem.conv', mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5),
         crop_pct=0.94, test_input_size=(3, 320, 320), test_crop_pct=1.0),
     'regnetz_d32.ra3_in1k': _cfgr(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/regnetz_d_rab_256-b8073a89.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/regnetz_d_rab_256-b8073a89.pth',
         mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5), crop_pct=0.95, test_input_size=(3, 320, 320)),
     'regnetz_d8.ra3_in1k': _cfgr(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/regnetz_d8_bh-afc03c55.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/regnetz_d8_bh-afc03c55.pth',
         mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5), crop_pct=0.94, test_input_size=(3, 320, 320), test_crop_pct=1.0),
     'regnetz_e8.ra3_in1k': _cfgr(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/regnetz_e8_bh-aace8e6e.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/regnetz_e8_bh-aace8e6e.pth',
         mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5), crop_pct=0.94, test_input_size=(3, 320, 320), test_crop_pct=1.0),
 
     'regnetz_b16_evos.untrained': _cfgr(
@@ -1908,12 +1908,12 @@ default_cfgs = generate_default_cfgs({
         input_size=(3, 224, 224), pool_size=(7, 7), crop_pct=0.95, test_input_size=(3, 288, 288)),
     'regnetz_c16_evos.ch_in1k': _cfgr(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tpu-weights/regnetz_c16_evos_ch-d8311942.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tpu-weights/regnetz_c16_evos_ch-d8311942.pth',
         first_conv='stem.conv', mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5),
         crop_pct=0.95, test_input_size=(3, 320, 320)),
     'regnetz_d8_evos.ch_in1k': _cfgr(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tpu-weights/regnetz_d8_evos_ch-2bc12646.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tpu-weights/regnetz_d8_evos_ch-2bc12646.pth',
         mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5), crop_pct=0.95, test_input_size=(3, 320, 320), test_crop_pct=1.0),
 
     'mobileone_s0.apple_in1k': _cfg(

@@ -1,6 +1,6 @@
 """ HRNet
 
-Copied from https://github.com/HRNet/HRNet-Image-Classification
+Copied from https://mirror.ghproxy.com/https://github.com/HRNet/HRNet-Image-Classification
 
 Original header:
   Copyright (c) Microsoft

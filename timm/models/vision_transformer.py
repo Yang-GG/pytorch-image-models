@@ -12,13 +12,13 @@ A PyTorch implement of Vision Transformers as described in:
     - https://arxiv.org/abs/2212.08013
 
 The official jax code is released and available at
-  * https://github.com/google-research/vision_transformer
-  * https://github.com/google-research/big_vision
+  * https://mirror.ghproxy.com/https://github.com/google-research/vision_transformer
+  * https://mirror.ghproxy.com/https://github.com/google-research/big_vision
 
 Acknowledgments:
   * The paper authors for releasing code and weights, thanks!
-  * I fixed my class token impl based on Phil Wang's https://github.com/lucidrains/vit-pytorch
-  * Simple transformer style inspired by Andrej Karpathy's https://github.com/karpathy/minGPT
+  * I fixed my class token impl based on Phil Wang's https://mirror.ghproxy.com/https://github.com/lucidrains/vit-pytorch
+  * Simple transformer style inspired by Andrej Karpathy's https://mirror.ghproxy.com/https://github.com/karpathy/minGPT
   * Bert reference code checks against Huggingface Transformers and Tensorflow Bert
 
 Hacked together by / Copyright 2020, Ross Wightman
@@ -759,7 +759,7 @@ def resize_pos_embed(
     *DEPRECATED* This function is being deprecated in favour of resample_abs_pos_embed
 
     Adapted from:
-        https://github.com/google-research/vision_transformer/blob/00883dd691c63a6830751563748663526e811cee/vit_jax/checkpoint.py#L224
+        https://mirror.ghproxy.com/https://github.com/google-research/vision_transformer/blob/00883dd691c63a6830751563748663526e811cee/vit_jax/checkpoint.py#L224
     """
     ntok_new = posemb_new.shape[1]
     if num_prefix_tokens:
@@ -1133,14 +1133,14 @@ default_cfgs = {
 
     # patch models (weights from official Google JAX impl) pretrained on in21k FT on in1k
     'vit_base_patch16_224.orig_in21k_ft_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_base_p16_224-80ecf9dd.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_base_p16_224-80ecf9dd.pth',
         hf_hub_id='timm/'),
     'vit_base_patch16_384.orig_in21k_ft_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_base_p16_384-83fb41ba.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_base_p16_384-83fb41ba.pth',
         hf_hub_id='timm/',
         input_size=(3, 384, 384), crop_pct=1.0),
     'vit_large_patch32_384.orig_in21k_ft_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_large_p32_384-9b920ba8.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_large_p32_384-9b920ba8.pth',
         hf_hub_id='timm/',
         input_size=(3, 384, 384), crop_pct=1.0),
 
@@ -1177,19 +1177,19 @@ default_cfgs = {
 
     # patch models, imagenet21k (weights from official Google JAX impl), classifier not valid
     'vit_base_patch32_224.orig_in21k': _cfg(
-        #url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_base_patch32_224_in21k-8db57226.pth',
+        #url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_base_patch32_224_in21k-8db57226.pth',
         hf_hub_id='timm/',
         num_classes=0),
     'vit_base_patch16_224.orig_in21k': _cfg(
-        #url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_base_patch16_224_in21k-e5005f0a.pth',
+        #url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_base_patch16_224_in21k-e5005f0a.pth',
         hf_hub_id='timm/',
         num_classes=0),
     'vit_large_patch32_224.orig_in21k': _cfg(
-        #url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_large_patch32_224_in21k-9046d2e7.pth',
+        #url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_large_patch32_224_in21k-9046d2e7.pth',
         hf_hub_id='timm/',
         num_classes=0),
     'vit_large_patch16_224.orig_in21k': _cfg(
-        #url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_large_patch16_224_in21k-606da67d.pth',
+        #url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_large_patch16_224_in21k-606da67d.pth',
         hf_hub_id='timm/',
         num_classes=0),
     'vit_huge_patch14_224.orig_in21k': _cfg(
@@ -1306,17 +1306,17 @@ default_cfgs = {
 
     # ViT ImageNet-21K-P pretraining by MILL
     'vit_base_patch16_224_miil.in21k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/vit_base_patch16_224_in21k_miil-887286df.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/vit_base_patch16_224_in21k_miil-887286df.pth',
         hf_hub_id='timm/',
         mean=(0., 0., 0.), std=(1., 1., 1.), crop_pct=0.875, interpolation='bilinear', num_classes=11221),
     'vit_base_patch16_224_miil.in21k_ft_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/vit_base_patch16_224_1k_miil_84_4-2deb18e3.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/vit_base_patch16_224_1k_miil_84_4-2deb18e3.pth',
         hf_hub_id='timm/',
         mean=(0., 0., 0.), std=(1., 1., 1.), crop_pct=0.875, interpolation='bilinear'),
 
     # Custom timm variants
     'vit_base_patch16_rpn_224.sw_in1k': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tpu-weights/vit_base_patch16_rpn_224-sw-3b07e89d.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tpu-weights/vit_base_patch16_rpn_224-sw-3b07e89d.pth',
         hf_hub_id='timm/'),
     'vit_medium_patch16_gap_240.sw_in12k': _cfg(
         hf_hub_id='timm/',
@@ -1560,7 +1560,7 @@ default_cfgs = {
     'vit_base_patch16_18x2_224.untrained': _cfg(url=''),
 
     # EVA fine-tuned weights from MAE style MIM - EVA-CLIP target pretrain
-    # https://github.com/baaivision/EVA/blob/7ecf2c0a370d97967e86d047d7af9188f78d2df3/eva/README.md#eva-l-learning-better-mim-representations-from-eva-clip
+    # https://mirror.ghproxy.com/https://github.com/baaivision/EVA/blob/7ecf2c0a370d97967e86d047d7af9188f78d2df3/eva/README.md#eva-l-learning-better-mim-representations-from-eva-clip
     'eva_large_patch14_196.in22k_ft_in22k_in1k': _cfg(
         # hf_hub_id='BAAI/EVA', hf_hub_filename='eva_l_psz14_196px_21k_to_1k_ft_88p6.pt',
         hf_hub_id='timm/', license='mit',
@@ -1837,7 +1837,7 @@ def vit_small_patch8_224(pretrained: bool = False, **kwargs) -> VisionTransforme
 @register_model
 def vit_base_patch32_224(pretrained: bool = False, **kwargs) -> VisionTransformer:
     """ ViT-Base (ViT-B/32) from original paper (https://arxiv.org/abs/2010.11929).
-    ImageNet-1k weights fine-tuned from in21k, source https://github.com/google-research/vision_transformer.
+    ImageNet-1k weights fine-tuned from in21k, source https://mirror.ghproxy.com/https://github.com/google-research/vision_transformer.
     """
     model_args = dict(patch_size=32, embed_dim=768, depth=12, num_heads=12)
     model = _create_vision_transformer('vit_base_patch32_224', pretrained=pretrained, **dict(model_args, **kwargs))
@@ -1847,7 +1847,7 @@ def vit_base_patch32_224(pretrained: bool = False, **kwargs) -> VisionTransforme
 @register_model
 def vit_base_patch32_384(pretrained: bool = False, **kwargs) -> VisionTransformer:
     """ ViT-Base model (ViT-B/32) from original paper (https://arxiv.org/abs/2010.11929).
-    ImageNet-1k weights fine-tuned from in21k @ 384x384, source https://github.com/google-research/vision_transformer.
+    ImageNet-1k weights fine-tuned from in21k @ 384x384, source https://mirror.ghproxy.com/https://github.com/google-research/vision_transformer.
     """
     model_args = dict(patch_size=32, embed_dim=768, depth=12, num_heads=12)
     model = _create_vision_transformer('vit_base_patch32_384', pretrained=pretrained, **dict(model_args, **kwargs))
@@ -1857,7 +1857,7 @@ def vit_base_patch32_384(pretrained: bool = False, **kwargs) -> VisionTransforme
 @register_model
 def vit_base_patch16_224(pretrained: bool = False, **kwargs) -> VisionTransformer:
     """ ViT-Base (ViT-B/16) from original paper (https://arxiv.org/abs/2010.11929).
-    ImageNet-1k weights fine-tuned from in21k @ 224x224, source https://github.com/google-research/vision_transformer.
+    ImageNet-1k weights fine-tuned from in21k @ 224x224, source https://mirror.ghproxy.com/https://github.com/google-research/vision_transformer.
     """
     model_args = dict(patch_size=16, embed_dim=768, depth=12, num_heads=12)
     model = _create_vision_transformer('vit_base_patch16_224', pretrained=pretrained, **dict(model_args, **kwargs))
@@ -1867,7 +1867,7 @@ def vit_base_patch16_224(pretrained: bool = False, **kwargs) -> VisionTransforme
 @register_model
 def vit_base_patch16_384(pretrained: bool = False, **kwargs) -> VisionTransformer:
     """ ViT-Base model (ViT-B/16) from original paper (https://arxiv.org/abs/2010.11929).
-    ImageNet-1k weights fine-tuned from in21k @ 384x384, source https://github.com/google-research/vision_transformer.
+    ImageNet-1k weights fine-tuned from in21k @ 384x384, source https://mirror.ghproxy.com/https://github.com/google-research/vision_transformer.
     """
     model_args = dict(patch_size=16, embed_dim=768, depth=12, num_heads=12)
     model = _create_vision_transformer('vit_base_patch16_384', pretrained=pretrained, **dict(model_args, **kwargs))
@@ -1877,7 +1877,7 @@ def vit_base_patch16_384(pretrained: bool = False, **kwargs) -> VisionTransforme
 @register_model
 def vit_base_patch8_224(pretrained: bool = False, **kwargs) -> VisionTransformer:
     """ ViT-Base (ViT-B/8) from original paper (https://arxiv.org/abs/2010.11929).
-    ImageNet-1k weights fine-tuned from in21k @ 224x224, source https://github.com/google-research/vision_transformer.
+    ImageNet-1k weights fine-tuned from in21k @ 224x224, source https://mirror.ghproxy.com/https://github.com/google-research/vision_transformer.
     """
     model_args = dict(patch_size=8, embed_dim=768, depth=12, num_heads=12)
     model = _create_vision_transformer('vit_base_patch8_224', pretrained=pretrained, **dict(model_args, **kwargs))
@@ -1896,7 +1896,7 @@ def vit_large_patch32_224(pretrained: bool = False, **kwargs) -> VisionTransform
 @register_model
 def vit_large_patch32_384(pretrained: bool = False, **kwargs) -> VisionTransformer:
     """ ViT-Large model (ViT-L/32) from original paper (https://arxiv.org/abs/2010.11929).
-    ImageNet-1k weights fine-tuned from in21k @ 384x384, source https://github.com/google-research/vision_transformer.
+    ImageNet-1k weights fine-tuned from in21k @ 384x384, source https://mirror.ghproxy.com/https://github.com/google-research/vision_transformer.
     """
     model_args = dict(patch_size=32, embed_dim=1024, depth=24, num_heads=16)
     model = _create_vision_transformer('vit_large_patch32_384', pretrained=pretrained, **dict(model_args, **kwargs))
@@ -1906,7 +1906,7 @@ def vit_large_patch32_384(pretrained: bool = False, **kwargs) -> VisionTransform
 @register_model
 def vit_large_patch16_224(pretrained: bool = False, **kwargs) -> VisionTransformer:
     """ ViT-Large model (ViT-L/16) from original paper (https://arxiv.org/abs/2010.11929).
-    ImageNet-1k weights fine-tuned from in21k @ 224x224, source https://github.com/google-research/vision_transformer.
+    ImageNet-1k weights fine-tuned from in21k @ 224x224, source https://mirror.ghproxy.com/https://github.com/google-research/vision_transformer.
     """
     model_args = dict(patch_size=16, embed_dim=1024, depth=24, num_heads=16)
     model = _create_vision_transformer('vit_large_patch16_224', pretrained=pretrained, **dict(model_args, **kwargs))
@@ -1916,7 +1916,7 @@ def vit_large_patch16_224(pretrained: bool = False, **kwargs) -> VisionTransform
 @register_model
 def vit_large_patch16_384(pretrained: bool = False, **kwargs) -> VisionTransformer:
     """ ViT-Large model (ViT-L/16) from original paper (https://arxiv.org/abs/2010.11929).
-    ImageNet-1k weights fine-tuned from in21k @ 384x384, source https://github.com/google-research/vision_transformer.
+    ImageNet-1k weights fine-tuned from in21k @ 384x384, source https://mirror.ghproxy.com/https://github.com/google-research/vision_transformer.
     """
     model_args = dict(patch_size=16, embed_dim=1024, depth=24, num_heads=16)
     model = _create_vision_transformer('vit_large_patch16_384', pretrained=pretrained, **dict(model_args, **kwargs))
@@ -1963,7 +1963,7 @@ def vit_gigantic_patch14_224(pretrained: bool = False, **kwargs) -> VisionTransf
 @register_model
 def vit_base_patch16_224_miil(pretrained: bool = False, **kwargs) -> VisionTransformer:
     """ ViT-Base (ViT-B/16) from original paper (https://arxiv.org/abs/2010.11929).
-    Weights taken from: https://github.com/Alibaba-MIIL/ImageNet21K
+    Weights taken from: https://mirror.ghproxy.com/https://github.com/Alibaba-MIIL/ImageNet21K
     """
     model_args = dict(patch_size=16, embed_dim=768, depth=12, num_heads=12, qkv_bias=False)
     model = _create_vision_transformer(

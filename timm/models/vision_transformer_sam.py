@@ -6,7 +6,7 @@ A PyTorch implement of Vision Transformers as described in:
     - https://arxiv.org/abs/2203.16527
 
 'Segment Anything Model (SAM)'
-    - https://github.com/facebookresearch/segment-anything/
+    - https://mirror.ghproxy.com/https://github.com/facebookresearch/segment-anything/
 
 """
 import logging
@@ -78,7 +78,7 @@ def get_decomposed_rel_pos_bias(
 ) -> torch.Tensor:
     """
     Calculate decomposed Relative Positional Embeddings from :paper:`mvitv2`.
-    https://github.com/facebookresearch/mvit/blob/19786631e330df9f3622e5402b4a419a263a2c80/mvit/models/attention.py
+    https://mirror.ghproxy.com/https://github.com/facebookresearch/mvit/blob/19786631e330df9f3622e5402b4a419a263a2c80/mvit/models/attention.py
     Args:
         q (Tensor): query q in the attention layer with shape (B, q_h * q_w, C).
         rel_pos_h (Tensor): relative position embeddings (Lh, C) for height axis.
@@ -591,7 +591,7 @@ def _cfg(url='', **kwargs):
 
 default_cfgs = generate_default_cfgs({
 
-    # Segment-Anyhing Model (SAM) pretrained - https://github.com/facebookresearch/segment-anything (no classifier head, for fine-tune/features only)
+    # Segment-Anyhing Model (SAM) pretrained - https://mirror.ghproxy.com/https://github.com/facebookresearch/segment-anything (no classifier head, for fine-tune/features only)
     'samvit_base_patch16.sa1b': _cfg(
         url='https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth',
         hf_hub_id='timm/',

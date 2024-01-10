@@ -2,7 +2,7 @@
 
 Paper: Visformer: The Vision-friendly Transformer - https://arxiv.org/abs/2104.12533
 
-From original at https://github.com/danczs/Visformer
+From original at https://mirror.ghproxy.com/https://github.com/danczs/Visformer
 
 Modifications and additions for timm hacked together by / Copyright 2021, Ross Wightman
 """

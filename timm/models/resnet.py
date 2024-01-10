@@ -1,6 +1,6 @@
 """PyTorch ResNet
 
-This started as a copy of https://github.com/pytorch/vision 'resnet.py' (BSD-3-Clause) with
+This started as a copy of https://mirror.ghproxy.com/https://github.com/pytorch/vision 'resnet.py' (BSD-3-Clause) with
 additional dropout and dynamic global avg/max pool.
 
 ResNeXt, SE-ResNeXt, SENet, and MXNet Gluon stem/downsample variants, tiered stems added by Ross Wightman
@@ -602,14 +602,14 @@ def _tcfg(url='', **kwargs):
 def _ttcfg(url='', **kwargs):
     return _cfg(url=url, **dict({
         'interpolation': 'bicubic', 'test_input_size': (3, 288, 288), 'test_crop_pct': 0.95,
-        'origin_url': 'https://github.com/huggingface/pytorch-image-models',
+        'origin_url': 'https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models',
     }, **kwargs))
 
 
 def _rcfg(url='', **kwargs):
     return _cfg(url=url, **dict({
         'interpolation': 'bicubic', 'crop_pct': 0.95, 'test_input_size': (3, 288, 288), 'test_crop_pct': 1.0,
-        'origin_url': 'https://github.com/huggingface/pytorch-image-models', 'paper_ids': 'arXiv:2110.00476'
+        'origin_url': 'https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models', 'paper_ids': 'arXiv:2110.00476'
     }, **kwargs))
 
 
@@ -617,7 +617,7 @@ def _r3cfg(url='', **kwargs):
     return _cfg(url=url, **dict({
         'interpolation': 'bicubic', 'input_size': (3, 160, 160), 'pool_size': (5, 5),
         'crop_pct': 0.95, 'test_input_size': (3, 224, 224), 'test_crop_pct': 0.95,
-        'origin_url': 'https://github.com/huggingface/pytorch-image-models', 'paper_ids': 'arXiv:2110.00476',
+        'origin_url': 'https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models', 'paper_ids': 'arXiv:2110.00476',
     }, **kwargs))
 
 
@@ -632,389 +632,389 @@ default_cfgs = generate_default_cfgs({
     # ResNet and Wide ResNet trained w/ timm (RSB paper and others)
     'resnet10t.c3_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet10t_176_c3-f3215ab1.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet10t_176_c3-f3215ab1.pth',
         input_size=(3, 176, 176), pool_size=(6, 6), test_crop_pct=0.95, test_input_size=(3, 224, 224),
         first_conv='conv1.0'),
     'resnet14t.c3_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet14t_176_c3-c4ed2c37.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet14t_176_c3-c4ed2c37.pth',
         input_size=(3, 176, 176), pool_size=(6, 6), test_crop_pct=0.95, test_input_size=(3, 224, 224),
         first_conv='conv1.0'),
     'resnet18.a1_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet18_a1_0-d63eafa0.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet18_a1_0-d63eafa0.pth'),
     'resnet18.a2_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet18_a2_0-b61bd467.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet18_a2_0-b61bd467.pth'),
     'resnet18.a3_in1k': _r3cfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet18_a3_0-40c531c8.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet18_a3_0-40c531c8.pth'),
     'resnet18d.ra2_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet18d_ra2-48a79e06.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet18d_ra2-48a79e06.pth',
         first_conv='conv1.0'),
     'resnet34.a1_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet34_a1_0-46f8f793.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet34_a1_0-46f8f793.pth'),
     'resnet34.a2_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet34_a2_0-82d47d71.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet34_a2_0-82d47d71.pth'),
     'resnet34.a3_in1k': _r3cfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet34_a3_0-a20cabb6.pth',
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet34_a3_0-a20cabb6.pth',
         crop_pct=0.95),
     'resnet34.bt_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet34-43635321.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet34-43635321.pth'),
     'resnet34d.ra2_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet34d_ra2-f8dcfcaf.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet34d_ra2-f8dcfcaf.pth',
         first_conv='conv1.0'),
     'resnet26.bt_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet26-9aa10e23.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet26-9aa10e23.pth'),
     'resnet26d.bt_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet26d-69e92c46.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet26d-69e92c46.pth',
         first_conv='conv1.0'),
     'resnet26t.ra2_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/resnet26t_256_ra2-6f6fa748.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-attn-weights/resnet26t_256_ra2-6f6fa748.pth',
         first_conv='conv1.0', input_size=(3, 256, 256), pool_size=(8, 8),
         crop_pct=0.94, test_input_size=(3, 320, 320), test_crop_pct=1.0),
     'resnet50.a1_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_a1_0-14fe96d1.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_a1_0-14fe96d1.pth'),
     'resnet50.a1h_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_a1h2_176-001a1197.pth',
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_a1h2_176-001a1197.pth',
         input_size=(3, 176, 176), pool_size=(6, 6), crop_pct=0.9, test_input_size=(3, 224, 224), test_crop_pct=1.0),
     'resnet50.a2_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_a2_0-a2746f79.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_a2_0-a2746f79.pth'),
     'resnet50.a3_in1k': _r3cfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_a3_0-59cae1ef.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_a3_0-59cae1ef.pth'),
     'resnet50.b1k_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_b1k-532a802a.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_b1k-532a802a.pth'),
     'resnet50.b2k_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_b2k-1ba180c1.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_b2k-1ba180c1.pth'),
     'resnet50.c1_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_c1-5ba5e060.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_c1-5ba5e060.pth'),
     'resnet50.c2_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_c2-d01e05b2.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_c2-d01e05b2.pth'),
     'resnet50.d_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_d-f39db8af.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_d-f39db8af.pth'),
     'resnet50.ram_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-weights/resnet50_ram-a26f946b.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-weights/resnet50_ram-a26f946b.pth'),
     'resnet50.am_in1k': _tcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-weights/resnet50_am-6c502b37.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-weights/resnet50_am-6c502b37.pth'),
     'resnet50.ra_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-weights/resnet50_ra-85ebb6e5.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-weights/resnet50_ra-85ebb6e5.pth'),
     'resnet50.bt_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-weights/rw_resnet50-86acaeed.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-weights/rw_resnet50-86acaeed.pth'),
     'resnet50d.ra2_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet50d_ra2-464e36ba.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet50d_ra2-464e36ba.pth',
         first_conv='conv1.0'),
     'resnet50d.a1_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50d_a1_0-e20cff14.pth',
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50d_a1_0-e20cff14.pth',
         first_conv='conv1.0'),
     'resnet50d.a2_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50d_a2_0-a3adc64d.pth',
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50d_a2_0-a3adc64d.pth',
         first_conv='conv1.0'),
     'resnet50d.a3_in1k': _r3cfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50d_a3_0-403fdfad.pth',
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50d_a3_0-403fdfad.pth',
         first_conv='conv1.0'),
     'resnet50t.untrained': _ttcfg(first_conv='conv1.0'),
     'resnet101.a1h_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet101_a1h-36d3f2aa.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet101_a1h-36d3f2aa.pth'),
     'resnet101.a1_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet101_a1_0-cdcb52a9.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet101_a1_0-cdcb52a9.pth'),
     'resnet101.a2_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet101_a2_0-6edb36c7.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet101_a2_0-6edb36c7.pth'),
     'resnet101.a3_in1k': _r3cfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet101_a3_0-1db14157.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet101_a3_0-1db14157.pth'),
     'resnet101d.ra2_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet101d_ra2-2803ffab.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet101d_ra2-2803ffab.pth',
         first_conv='conv1.0', input_size=(3, 256, 256), pool_size=(8, 8), crop_pct=0.95,
         test_crop_pct=1.0, test_input_size=(3, 320, 320)),
     'resnet152.a1h_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet152_a1h-dc400468.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet152_a1h-dc400468.pth'),
     'resnet152.a1_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet152_a1_0-2eee8a7a.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet152_a1_0-2eee8a7a.pth'),
     'resnet152.a2_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet152_a2_0-b4c6978f.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet152_a2_0-b4c6978f.pth'),
     'resnet152.a3_in1k': _r3cfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet152_a3_0-134d4688.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet152_a3_0-134d4688.pth'),
     'resnet152d.ra2_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet152d_ra2-5cac0439.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet152d_ra2-5cac0439.pth',
         first_conv='conv1.0', input_size=(3, 256, 256), pool_size=(8, 8), crop_pct=0.95,
         test_crop_pct=1.0, test_input_size=(3, 320, 320)),
     'resnet200.untrained': _ttcfg(),
     'resnet200d.ra2_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet200d_ra2-bdba9bf9.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet200d_ra2-bdba9bf9.pth',
         first_conv='conv1.0', input_size=(3, 256, 256), pool_size=(8, 8), crop_pct=0.95,
         test_crop_pct=1.0, test_input_size=(3, 320, 320)),
     'wide_resnet50_2.racm_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/wide_resnet50_racm-8234f177.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/wide_resnet50_racm-8234f177.pth'),
 
     # torchvision resnet weights
     'resnet18.tv_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/resnet18-5c106cde.pth',
-        license='bsd-3-clause', origin_url='https://github.com/pytorch/vision'),
+        license='bsd-3-clause', origin_url='https://mirror.ghproxy.com/https://github.com/pytorch/vision'),
     'resnet34.tv_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/resnet34-333f7ec4.pth',
-        license='bsd-3-clause', origin_url='https://github.com/pytorch/vision'),
+        license='bsd-3-clause', origin_url='https://mirror.ghproxy.com/https://github.com/pytorch/vision'),
     'resnet50.tv_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/resnet50-19c8e357.pth',
-        license='bsd-3-clause', origin_url='https://github.com/pytorch/vision'),
+        license='bsd-3-clause', origin_url='https://mirror.ghproxy.com/https://github.com/pytorch/vision'),
     'resnet50.tv2_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/resnet50-11ad3fa6.pth',
         input_size=(3, 176, 176), pool_size=(6, 6), test_input_size=(3, 224, 224), test_crop_pct=0.965,
-        license='bsd-3-clause', origin_url='https://github.com/pytorch/vision'),
+        license='bsd-3-clause', origin_url='https://mirror.ghproxy.com/https://github.com/pytorch/vision'),
     'resnet101.tv_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/resnet101-5d3b4d8f.pth',
-        license='bsd-3-clause', origin_url='https://github.com/pytorch/vision'),
+        license='bsd-3-clause', origin_url='https://mirror.ghproxy.com/https://github.com/pytorch/vision'),
     'resnet101.tv2_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/resnet101-cd907fc2.pth',
         input_size=(3, 176, 176), pool_size=(6, 6), test_input_size=(3, 224, 224), test_crop_pct=0.965,
-        license='bsd-3-clause', origin_url='https://github.com/pytorch/vision'),
+        license='bsd-3-clause', origin_url='https://mirror.ghproxy.com/https://github.com/pytorch/vision'),
     'resnet152.tv_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/resnet152-b121ed2d.pth',
-        license='bsd-3-clause', origin_url='https://github.com/pytorch/vision'),
+        license='bsd-3-clause', origin_url='https://mirror.ghproxy.com/https://github.com/pytorch/vision'),
     'resnet152.tv2_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/resnet152-f82ba261.pth',
         input_size=(3, 176, 176), pool_size=(6, 6), test_input_size=(3, 224, 224), test_crop_pct=0.965,
-        license='bsd-3-clause', origin_url='https://github.com/pytorch/vision'),
+        license='bsd-3-clause', origin_url='https://mirror.ghproxy.com/https://github.com/pytorch/vision'),
     'wide_resnet50_2.tv_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/wide_resnet50_2-95faca4d.pth',
-        license='bsd-3-clause', origin_url='https://github.com/pytorch/vision'),
+        license='bsd-3-clause', origin_url='https://mirror.ghproxy.com/https://github.com/pytorch/vision'),
     'wide_resnet50_2.tv2_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/wide_resnet50_2-9ba9bcbe.pth',
         input_size=(3, 176, 176), pool_size=(6, 6), test_input_size=(3, 224, 224), test_crop_pct=0.965,
-        license='bsd-3-clause', origin_url='https://github.com/pytorch/vision'),
+        license='bsd-3-clause', origin_url='https://mirror.ghproxy.com/https://github.com/pytorch/vision'),
     'wide_resnet101_2.tv_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/wide_resnet101_2-32ee1156.pth',
-        license='bsd-3-clause', origin_url='https://github.com/pytorch/vision'),
+        license='bsd-3-clause', origin_url='https://mirror.ghproxy.com/https://github.com/pytorch/vision'),
     'wide_resnet101_2.tv2_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/wide_resnet101_2-d733dc28.pth',
         input_size=(3, 176, 176), pool_size=(6, 6), test_input_size=(3, 224, 224), test_crop_pct=0.965,
-        license='bsd-3-clause', origin_url='https://github.com/pytorch/vision'),
+        license='bsd-3-clause', origin_url='https://mirror.ghproxy.com/https://github.com/pytorch/vision'),
 
     # ResNets w/ alternative norm layers
     'resnet50_gn.a1h_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_gn_a1h2-8fe6c4d0.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_gn_a1h2-8fe6c4d0.pth',
         crop_pct=0.94),
 
     # ResNeXt trained in timm (RSB paper and others)
     'resnext50_32x4d.a1h_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnext50_32x4d_a1h-0146ab0a.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnext50_32x4d_a1h-0146ab0a.pth'),
     'resnext50_32x4d.a1_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnext50_32x4d_a1_0-b5a91a1d.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnext50_32x4d_a1_0-b5a91a1d.pth'),
     'resnext50_32x4d.a2_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnext50_32x4d_a2_0-efc76add.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnext50_32x4d_a2_0-efc76add.pth'),
     'resnext50_32x4d.a3_in1k': _r3cfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnext50_32x4d_a3_0-3e450271.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnext50_32x4d_a3_0-3e450271.pth'),
     'resnext50_32x4d.ra_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-weights/resnext50_32x4d_ra-d733960d.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-weights/resnext50_32x4d_ra-d733960d.pth'),
     'resnext50d_32x4d.bt_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnext50d_32x4d-103e99f8.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnext50d_32x4d-103e99f8.pth',
         first_conv='conv1.0'),
     'resnext101_32x4d.untrained': _ttcfg(),
     'resnext101_64x4d.c1_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tpu-weights/resnext101_64x4d_c-0d0e0cc0.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tpu-weights/resnext101_64x4d_c-0d0e0cc0.pth'),
 
     # torchvision ResNeXt weights
     'resnext50_32x4d.tv_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/resnext50_32x4d-7cdf4587.pth',
-        license='bsd-3-clause', origin_url='https://github.com/pytorch/vision'),
+        license='bsd-3-clause', origin_url='https://mirror.ghproxy.com/https://github.com/pytorch/vision'),
     'resnext101_32x8d.tv_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/resnext101_32x8d-8ba56ff5.pth',
-        license='bsd-3-clause', origin_url='https://github.com/pytorch/vision'),
+        license='bsd-3-clause', origin_url='https://mirror.ghproxy.com/https://github.com/pytorch/vision'),
     'resnext101_64x4d.tv_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/resnext101_64x4d-173b62eb.pth',
-        license='bsd-3-clause', origin_url='https://github.com/pytorch/vision'),
+        license='bsd-3-clause', origin_url='https://mirror.ghproxy.com/https://github.com/pytorch/vision'),
     'resnext50_32x4d.tv2_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/resnext50_32x4d-1a0047aa.pth',
         input_size=(3, 176, 176), pool_size=(6, 6), test_input_size=(3, 224, 224), test_crop_pct=0.965,
-        license='bsd-3-clause', origin_url='https://github.com/pytorch/vision'),
+        license='bsd-3-clause', origin_url='https://mirror.ghproxy.com/https://github.com/pytorch/vision'),
     'resnext101_32x8d.tv2_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/resnext101_32x8d-110c445d.pth',
         input_size=(3, 176, 176), pool_size=(6, 6), test_input_size=(3, 224, 224), test_crop_pct=0.965,
-        license='bsd-3-clause', origin_url='https://github.com/pytorch/vision'),
+        license='bsd-3-clause', origin_url='https://mirror.ghproxy.com/https://github.com/pytorch/vision'),
 
     #  ResNeXt models - Weakly Supervised Pretraining on Instagram Hashtags
-    #  from https://github.com/facebookresearch/WSL-Images
+    #  from https://mirror.ghproxy.com/https://github.com/facebookresearch/WSL-Images
     #  Please note the CC-BY-NC 4.0 license on these weights, non-commercial use only.
     'resnext101_32x8d.fb_wsl_ig1b_ft_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/ig_resnext101_32x8-c38310e5.pth',
-        license='cc-by-nc-4.0', origin_url='https://github.com/facebookresearch/WSL-Images'),
+        license='cc-by-nc-4.0', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/WSL-Images'),
     'resnext101_32x16d.fb_wsl_ig1b_ft_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/ig_resnext101_32x16-c6f796b0.pth',
-        license='cc-by-nc-4.0', origin_url='https://github.com/facebookresearch/WSL-Images'),
+        license='cc-by-nc-4.0', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/WSL-Images'),
     'resnext101_32x32d.fb_wsl_ig1b_ft_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/ig_resnext101_32x32-e4b90b00.pth',
-        license='cc-by-nc-4.0', origin_url='https://github.com/facebookresearch/WSL-Images'),
+        license='cc-by-nc-4.0', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/WSL-Images'),
     'resnext101_32x48d.fb_wsl_ig1b_ft_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://download.pytorch.org/models/ig_resnext101_32x48-3e41cc8a.pth',
-        license='cc-by-nc-4.0', origin_url='https://github.com/facebookresearch/WSL-Images'),
+        license='cc-by-nc-4.0', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/WSL-Images'),
 
-    #  Semi-Supervised ResNe*t models from https://github.com/facebookresearch/semi-supervised-ImageNet1K-models
+    #  Semi-Supervised ResNe*t models from https://mirror.ghproxy.com/https://github.com/facebookresearch/semi-supervised-ImageNet1K-models
     #  Please note the CC-BY-NC 4.0 license on theses weights, non-commercial use only.
     'resnet18.fb_ssl_yfcc100m_ft_in1k':  _cfg(
         hf_hub_id='timm/',
         url='https://dl.fbaipublicfiles.com/semiweaksupervision/model_files/semi_supervised_resnet18-d92f0530.pth',
-        license='cc-by-nc-4.0', origin_url='https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
+        license='cc-by-nc-4.0', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
     'resnet50.fb_ssl_yfcc100m_ft_in1k':  _cfg(
         hf_hub_id='timm/',
         url='https://dl.fbaipublicfiles.com/semiweaksupervision/model_files/semi_supervised_resnet50-08389792.pth',
-        license='cc-by-nc-4.0', origin_url='https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
+        license='cc-by-nc-4.0', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
     'resnext50_32x4d.fb_ssl_yfcc100m_ft_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://dl.fbaipublicfiles.com/semiweaksupervision/model_files/semi_supervised_resnext50_32x4-ddb3e555.pth',
-        license='cc-by-nc-4.0', origin_url='https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
+        license='cc-by-nc-4.0', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
     'resnext101_32x4d.fb_ssl_yfcc100m_ft_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://dl.fbaipublicfiles.com/semiweaksupervision/model_files/semi_supervised_resnext101_32x4-dc43570a.pth',
-        license='cc-by-nc-4.0', origin_url='https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
+        license='cc-by-nc-4.0', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
     'resnext101_32x8d.fb_ssl_yfcc100m_ft_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://dl.fbaipublicfiles.com/semiweaksupervision/model_files/semi_supervised_resnext101_32x8-2cfe2f8b.pth',
-        license='cc-by-nc-4.0', origin_url='https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
+        license='cc-by-nc-4.0', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
     'resnext101_32x16d.fb_ssl_yfcc100m_ft_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://dl.fbaipublicfiles.com/semiweaksupervision/model_files/semi_supervised_resnext101_32x16-15fffa57.pth',
-        license='cc-by-nc-4.0', origin_url='https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
+        license='cc-by-nc-4.0', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
 
-    #  Semi-Weakly Supervised ResNe*t models from https://github.com/facebookresearch/semi-supervised-ImageNet1K-models
+    #  Semi-Weakly Supervised ResNe*t models from https://mirror.ghproxy.com/https://github.com/facebookresearch/semi-supervised-ImageNet1K-models
     #  Please note the CC-BY-NC 4.0 license on theses weights, non-commercial use only.
     'resnet18.fb_swsl_ig1b_ft_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://dl.fbaipublicfiles.com/semiweaksupervision/model_files/semi_weakly_supervised_resnet18-118f1556.pth',
-        license='cc-by-nc-4.0', origin_url='https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
+        license='cc-by-nc-4.0', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
     'resnet50.fb_swsl_ig1b_ft_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://dl.fbaipublicfiles.com/semiweaksupervision/model_files/semi_weakly_supervised_resnet50-16a12f1b.pth',
-        license='cc-by-nc-4.0', origin_url='https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
+        license='cc-by-nc-4.0', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
     'resnext50_32x4d.fb_swsl_ig1b_ft_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://dl.fbaipublicfiles.com/semiweaksupervision/model_files/semi_weakly_supervised_resnext50_32x4-72679e44.pth',
-        license='cc-by-nc-4.0', origin_url='https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
+        license='cc-by-nc-4.0', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
     'resnext101_32x4d.fb_swsl_ig1b_ft_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://dl.fbaipublicfiles.com/semiweaksupervision/model_files/semi_weakly_supervised_resnext101_32x4-3f87e46b.pth',
-        license='cc-by-nc-4.0', origin_url='https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
+        license='cc-by-nc-4.0', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
     'resnext101_32x8d.fb_swsl_ig1b_ft_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://dl.fbaipublicfiles.com/semiweaksupervision/model_files/semi_weakly_supervised_resnext101_32x8-b4712904.pth',
-        license='cc-by-nc-4.0', origin_url='https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
+        license='cc-by-nc-4.0', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
     'resnext101_32x16d.fb_swsl_ig1b_ft_in1k': _cfg(
         hf_hub_id='timm/',
         url='https://dl.fbaipublicfiles.com/semiweaksupervision/model_files/semi_weakly_supervised_resnext101_32x16-f3559a9c.pth',
-        license='cc-by-nc-4.0', origin_url='https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
+        license='cc-by-nc-4.0', origin_url='https://mirror.ghproxy.com/https://github.com/facebookresearch/semi-supervised-ImageNet1K-models'),
 
     #  Efficient Channel Attention ResNets
     'ecaresnet26t.ra2_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/ecaresnet26t_ra2-46609757.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/ecaresnet26t_ra2-46609757.pth',
         first_conv='conv1.0', input_size=(3, 256, 256), pool_size=(8, 8),
         test_crop_pct=0.95, test_input_size=(3, 320, 320)),
     'ecaresnetlight.miil_in1k': _tcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/ecaresnetlight-75a9c627.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/ecaresnetlight-75a9c627.pth',
         test_crop_pct=0.95, test_input_size=(3, 288, 288)),
     'ecaresnet50d.miil_in1k': _tcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/ecaresnet50d-93c81e3b.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/ecaresnet50d-93c81e3b.pth',
         first_conv='conv1.0', test_crop_pct=0.95, test_input_size=(3, 288, 288)),
     'ecaresnet50d_pruned.miil_in1k': _tcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/ecaresnet50d_p-e4fa23c2.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/ecaresnet50d_p-e4fa23c2.pth',
         first_conv='conv1.0', test_crop_pct=0.95, test_input_size=(3, 288, 288)),
     'ecaresnet50t.ra2_in1k': _tcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/ecaresnet50t_ra2-f7ac63c4.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/ecaresnet50t_ra2-f7ac63c4.pth',
         first_conv='conv1.0', input_size=(3, 256, 256), pool_size=(8, 8),
         test_crop_pct=0.95, test_input_size=(3, 320, 320)),
     'ecaresnet50t.a1_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/ecaresnet50t_a1_0-99bd76a8.pth',
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/ecaresnet50t_a1_0-99bd76a8.pth',
         first_conv='conv1.0'),
     'ecaresnet50t.a2_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/ecaresnet50t_a2_0-b1c7b745.pth',
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/ecaresnet50t_a2_0-b1c7b745.pth',
         first_conv='conv1.0'),
     'ecaresnet50t.a3_in1k': _r3cfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/ecaresnet50t_a3_0-8cc311f1.pth',
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/ecaresnet50t_a3_0-8cc311f1.pth',
         first_conv='conv1.0'),
     'ecaresnet101d.miil_in1k': _tcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/ecaresnet101d-153dad65.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/ecaresnet101d-153dad65.pth',
         first_conv='conv1.0', test_crop_pct=0.95, test_input_size=(3, 288, 288)),
     'ecaresnet101d_pruned.miil_in1k': _tcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/ecaresnet101d_p-9e74cb91.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tresnet/ecaresnet101d_p-9e74cb91.pth',
         first_conv='conv1.0', test_crop_pct=0.95, test_input_size=(3, 288, 288)),
     'ecaresnet200d.untrained': _ttcfg(
         first_conv='conv1.0', input_size=(3, 256, 256), crop_pct=0.95, pool_size=(8, 8)),
     'ecaresnet269d.ra2_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/ecaresnet269d_320_ra2-7baa55cb.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/ecaresnet269d_320_ra2-7baa55cb.pth',
         first_conv='conv1.0', input_size=(3, 320, 320), pool_size=(10, 10), crop_pct=0.95,
         test_crop_pct=1.0, test_input_size=(3, 352, 352)),
 
@@ -1027,26 +1027,26 @@ default_cfgs = generate_default_cfgs({
     'seresnet34.untrained': _ttcfg(),
     'seresnet50.a1_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/seresnet50_a1_0-ffa00869.pth',
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/seresnet50_a1_0-ffa00869.pth',
         crop_pct=0.95),
     'seresnet50.a2_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/seresnet50_a2_0-850de0d9.pth',
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/seresnet50_a2_0-850de0d9.pth',
         crop_pct=0.95),
     'seresnet50.a3_in1k': _r3cfg(
         hf_hub_id='timm/',
-        url='https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/seresnet50_a3_0-317ecd56.pth',
+        url='https://mirror.ghproxy.com/https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/seresnet50_a3_0-317ecd56.pth',
         crop_pct=0.95),
     'seresnet50.ra2_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/seresnet50_ra_224-8efdb4bb.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/seresnet50_ra_224-8efdb4bb.pth'),
     'seresnet50t.untrained': _ttcfg(
         first_conv='conv1.0'),
     'seresnet101.untrained': _ttcfg(),
     'seresnet152.untrained': _ttcfg(),
     'seresnet152d.ra2_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/seresnet152d_ra2-04464dd2.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/seresnet152d_ra2-04464dd2.pth',
         first_conv='conv1.0', input_size=(3, 256, 256), pool_size=(8, 8), crop_pct=0.95,
         test_crop_pct=1.0, test_input_size=(3, 320, 320)
     ),
@@ -1058,22 +1058,22 @@ default_cfgs = generate_default_cfgs({
     #  Squeeze-Excitation ResNeXts, to eventually replace the models in senet.py
     'seresnext26d_32x4d.bt_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/seresnext26d_32x4d-80fa48a3.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/seresnext26d_32x4d-80fa48a3.pth',
         first_conv='conv1.0'),
     'seresnext26t_32x4d.bt_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/seresnext26tn_32x4d-569cb627.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/seresnext26tn_32x4d-569cb627.pth',
         first_conv='conv1.0'),
     'seresnext50_32x4d.racm_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/seresnext50_32x4d_racm-a304a460.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/seresnext50_32x4d_racm-a304a460.pth'),
     'seresnext101_32x4d.untrained': _ttcfg(),
     'seresnext101_32x8d.ah_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tpu-weights/seresnext101_32x8d_ah-e6bc4c0a.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tpu-weights/seresnext101_32x8d_ah-e6bc4c0a.pth'),
     'seresnext101d_32x8d.ah_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tpu-weights/seresnext101d_32x8d_ah-191d7b94.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tpu-weights/seresnext101d_32x8d_ah-191d7b94.pth',
         first_conv='conv1.0'),
 
     # ResNets with anti-aliasing / blur pool
@@ -1114,130 +1114,130 @@ default_cfgs = generate_default_cfgs({
     'resnetblur18.untrained': _ttcfg(),
     'resnetblur50.bt_in1k': _ttcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnetblur50-84f4748f.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnetblur50-84f4748f.pth'),
     'resnetblur50d.untrained': _ttcfg(first_conv='conv1.0'),
     'resnetblur101d.untrained': _ttcfg(first_conv='conv1.0'),
     'resnetaa34d.untrained': _ttcfg(first_conv='conv1.0'),
     'resnetaa50.a1h_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnetaa50_a1h-4cf422b3.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnetaa50_a1h-4cf422b3.pth'),
 
     'seresnetaa50d.untrained': _ttcfg(first_conv='conv1.0'),
     'seresnextaa101d_32x8d.ah_in1k': _rcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tpu-weights/seresnextaa101d_32x8d_ah-83c8ae12.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tpu-weights/seresnextaa101d_32x8d_ah-83c8ae12.pth',
         first_conv='conv1.0'),
 
     # ResNet-RS models
     'resnetrs50.tf_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rs-weights/resnetrs50_ema-6b53758b.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rs-weights/resnetrs50_ema-6b53758b.pth',
         input_size=(3, 160, 160), pool_size=(5, 5), crop_pct=0.91, test_input_size=(3, 224, 224),
         interpolation='bicubic', first_conv='conv1.0'),
     'resnetrs101.tf_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rs-weights/resnetrs101_i192_ema-1509bbf6.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rs-weights/resnetrs101_i192_ema-1509bbf6.pth',
         input_size=(3, 192, 192), pool_size=(6, 6), crop_pct=0.94, test_input_size=(3, 288, 288),
         interpolation='bicubic', first_conv='conv1.0'),
     'resnetrs152.tf_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rs-weights/resnetrs152_i256_ema-a9aff7f9.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rs-weights/resnetrs152_i256_ema-a9aff7f9.pth',
         input_size=(3, 256, 256), pool_size=(8, 8), crop_pct=1.0, test_input_size=(3, 320, 320),
         interpolation='bicubic', first_conv='conv1.0'),
     'resnetrs200.tf_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tpu-weights/resnetrs200_c-6b698b88.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-tpu-weights/resnetrs200_c-6b698b88.pth',
         input_size=(3, 256, 256), pool_size=(8, 8), crop_pct=1.0, test_input_size=(3, 320, 320),
         interpolation='bicubic', first_conv='conv1.0'),
     'resnetrs270.tf_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rs-weights/resnetrs270_ema-b40e674c.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rs-weights/resnetrs270_ema-b40e674c.pth',
         input_size=(3, 256, 256), pool_size=(8, 8), crop_pct=1.0, test_input_size=(3, 352, 352),
         interpolation='bicubic', first_conv='conv1.0'),
     'resnetrs350.tf_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rs-weights/resnetrs350_i256_ema-5a1aa8f1.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rs-weights/resnetrs350_i256_ema-5a1aa8f1.pth',
         input_size=(3, 288, 288), pool_size=(9, 9), crop_pct=1.0, test_input_size=(3, 384, 384),
         interpolation='bicubic', first_conv='conv1.0'),
     'resnetrs420.tf_in1k': _cfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rs-weights/resnetrs420_ema-972dee69.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rs-weights/resnetrs420_ema-972dee69.pth',
         input_size=(3, 320, 320), pool_size=(10, 10), crop_pct=1.0, test_input_size=(3, 416, 416),
         interpolation='bicubic', first_conv='conv1.0'),
 
     # gluon resnet weights
     'resnet18.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet18_v1b-0757602b.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet18_v1b-0757602b.pth'),
     'resnet34.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet34_v1b-c6d82d59.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet34_v1b-c6d82d59.pth'),
     'resnet50.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet50_v1b-0ebe02e2.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet50_v1b-0ebe02e2.pth'),
     'resnet101.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet101_v1b-3b017079.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet101_v1b-3b017079.pth'),
     'resnet152.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet152_v1b-c1edb0dd.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet152_v1b-c1edb0dd.pth'),
     'resnet50c.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet50_v1c-48092f55.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet50_v1c-48092f55.pth',
         first_conv='conv1.0'),
     'resnet101c.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet101_v1c-1f26822a.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet101_v1c-1f26822a.pth',
         first_conv='conv1.0'),
     'resnet152c.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet152_v1c-a3bb0b98.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet152_v1c-a3bb0b98.pth',
         first_conv='conv1.0'),
     'resnet50d.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet50_v1d-818a1b1b.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet50_v1d-818a1b1b.pth',
         first_conv='conv1.0'),
     'resnet101d.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet101_v1d-0f9c8644.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet101_v1d-0f9c8644.pth',
         first_conv='conv1.0'),
     'resnet152d.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet152_v1d-bd354e12.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet152_v1d-bd354e12.pth',
         first_conv='conv1.0'),
     'resnet50s.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet50_v1s-1762acc0.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet50_v1s-1762acc0.pth',
         first_conv='conv1.0'),
     'resnet101s.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet101_v1s-60fe0cc1.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet101_v1s-60fe0cc1.pth',
         first_conv='conv1.0'),
     'resnet152s.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet152_v1s-dcc41b81.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnet152_v1s-dcc41b81.pth',
         first_conv='conv1.0'),
     'resnext50_32x4d.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnext50_32x4d-e6a097c1.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnext50_32x4d-e6a097c1.pth'),
     'resnext101_32x4d.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnext101_32x4d-b253c8c4.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnext101_32x4d-b253c8c4.pth'),
     'resnext101_64x4d.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnext101_64x4d-f9a8e184.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_resnext101_64x4d-f9a8e184.pth'),
     'seresnext50_32x4d.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_seresnext50_32x4d-90cf2d6e.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_seresnext50_32x4d-90cf2d6e.pth'),
     'seresnext101_32x4d.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_seresnext101_32x4d-cf52900d.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_seresnext101_32x4d-cf52900d.pth'),
     'seresnext101_64x4d.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_seresnext101_64x4d-f9926f93.pth'),
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_seresnext101_64x4d-f9926f93.pth'),
     'senet154.gluon_in1k': _gcfg(
         hf_hub_id='timm/',
-        url='https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_senet154-70a1a3c0.pth',
+        url='https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-pretrained-gluonresnet/releases/download/v0.1/gluon_senet154-70a1a3c0.pth',
         first_conv='conv1.0'),
 })
 
@@ -1890,7 +1890,7 @@ def seresnextaa201d_32x8d(pretrained: bool = False, **kwargs):
 def resnetrs50(pretrained: bool = False, **kwargs) -> ResNet:
     """Constructs a ResNet-RS-50 model.
     Paper: Revisiting ResNets - https://arxiv.org/abs/2103.07579
-    Pretrained weights from https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs
+    Pretrained weights from https://mirror.ghproxy.com/https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs
     """
     attn_layer = partial(get_attn('se'), rd_ratio=0.25)
     model_args = dict(
@@ -1903,7 +1903,7 @@ def resnetrs50(pretrained: bool = False, **kwargs) -> ResNet:
 def resnetrs101(pretrained: bool = False, **kwargs) -> ResNet:
     """Constructs a ResNet-RS-101 model.
     Paper: Revisiting ResNets - https://arxiv.org/abs/2103.07579
-    Pretrained weights from https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs
+    Pretrained weights from https://mirror.ghproxy.com/https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs
     """
     attn_layer = partial(get_attn('se'), rd_ratio=0.25)
     model_args = dict(
@@ -1916,7 +1916,7 @@ def resnetrs101(pretrained: bool = False, **kwargs) -> ResNet:
 def resnetrs152(pretrained: bool = False, **kwargs) -> ResNet:
     """Constructs a ResNet-RS-152 model.
     Paper: Revisiting ResNets - https://arxiv.org/abs/2103.07579
-    Pretrained weights from https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs
+    Pretrained weights from https://mirror.ghproxy.com/https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs
     """
     attn_layer = partial(get_attn('se'), rd_ratio=0.25)
     model_args = dict(
@@ -1929,7 +1929,7 @@ def resnetrs152(pretrained: bool = False, **kwargs) -> ResNet:
 def resnetrs200(pretrained: bool = False, **kwargs) -> ResNet:
     """Constructs a ResNet-RS-200 model.
     Paper: Revisiting ResNets - https://arxiv.org/abs/2103.07579
-    Pretrained weights from https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs
+    Pretrained weights from https://mirror.ghproxy.com/https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs
     """
     attn_layer = partial(get_attn('se'), rd_ratio=0.25)
     model_args = dict(
@@ -1942,7 +1942,7 @@ def resnetrs200(pretrained: bool = False, **kwargs) -> ResNet:
 def resnetrs270(pretrained: bool = False, **kwargs) -> ResNet:
     """Constructs a ResNet-RS-270 model.
     Paper: Revisiting ResNets - https://arxiv.org/abs/2103.07579
-    Pretrained weights from https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs
+    Pretrained weights from https://mirror.ghproxy.com/https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs
     """
     attn_layer = partial(get_attn('se'), rd_ratio=0.25)
     model_args = dict(
@@ -1956,7 +1956,7 @@ def resnetrs270(pretrained: bool = False, **kwargs) -> ResNet:
 def resnetrs350(pretrained: bool = False, **kwargs) -> ResNet:
     """Constructs a ResNet-RS-350 model.
     Paper: Revisiting ResNets - https://arxiv.org/abs/2103.07579
-    Pretrained weights from https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs
+    Pretrained weights from https://mirror.ghproxy.com/https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs
     """
     attn_layer = partial(get_attn('se'), rd_ratio=0.25)
     model_args = dict(
@@ -1969,7 +1969,7 @@ def resnetrs350(pretrained: bool = False, **kwargs) -> ResNet:
 def resnetrs420(pretrained: bool = False, **kwargs) -> ResNet:
     """Constructs a ResNet-RS-420 model
     Paper: Revisiting ResNets - https://arxiv.org/abs/2103.07579
-    Pretrained weights from https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs
+    Pretrained weights from https://mirror.ghproxy.com/https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs
     """
     attn_layer = partial(get_attn('se'), rd_ratio=0.25)
     model_args = dict(

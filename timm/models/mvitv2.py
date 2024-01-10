@@ -7,7 +7,7 @@
   year={2022}
 }
 
-Code adapted from original Apache 2.0 licensed impl at https://github.com/facebookresearch/mvit
+Code adapted from original Apache 2.0 licensed impl at https://mirror.ghproxy.com/https://github.com/facebookresearch/mvit
 Original copyright below.
 
 Modifications and timm support by / Copyright 2022, Ross Wightman

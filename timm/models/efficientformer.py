@@ -8,7 +8,7 @@
   year={2022}
 }
 
-Based on Apache 2.0 licensed code at https://github.com/snap-research/EfficientFormer, Copyright (c) 2022 Snap Inc.
+Based on Apache 2.0 licensed code at https://mirror.ghproxy.com/https://github.com/snap-research/EfficientFormer, Copyright (c) 2022 Snap Inc.
 
 Modifications and timm support by / Copyright 2022, Ross Wightman
 """

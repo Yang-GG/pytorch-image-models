@@ -1,5 +1,5 @@
 """ Res2Net and Res2NeXt
-Adapted from Official Pytorch impl at: https://github.com/gasvn/Res2Net/
+Adapted from Official Pytorch impl at: https://mirror.ghproxy.com/https://github.com/gasvn/Res2Net/
 Paper: `Res2Net: A New Multi-scale Backbone Architecture` - https://arxiv.org/abs/1904.01169
 """
 import math
@@ -17,7 +17,7 @@ __all__ = []
 
 class Bottle2neck(nn.Module):
     """ Res2Net/Res2NeXT Bottleneck
-    Adapted from https://github.com/gasvn/Res2Net/blob/master/res2net.py
+    Adapted from https://mirror.ghproxy.com/https://github.com/gasvn/Res2Net/blob/master/res2net.py
     """
     expansion = 4
 

@@ -3,7 +3,7 @@
 Paper: `TinyViT: Fast Pretraining Distillation for Small Vision Transformers`
     - https://arxiv.org/abs/2207.10666
 
-Adapted from official impl at https://github.com/microsoft/Cream/tree/main/TinyViT
+Adapted from official impl at https://mirror.ghproxy.com/https://github.com/microsoft/Cream/tree/main/TinyViT
 """
 
 __all__ = ['TinyVit']
@@ -588,51 +588,51 @@ def _cfg(url='', **kwargs):
 default_cfgs = generate_default_cfgs({
     'tiny_vit_5m_224.dist_in22k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_5m_22k_distill.pth',
+        # url='https://mirror.ghproxy.com/https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_5m_22k_distill.pth',
         num_classes=21841
     ),
     'tiny_vit_5m_224.dist_in22k_ft_in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_5m_22kto1k_distill.pth'
+        # url='https://mirror.ghproxy.com/https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_5m_22kto1k_distill.pth'
     ),
     'tiny_vit_5m_224.in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_5m_1k.pth'
+        # url='https://mirror.ghproxy.com/https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_5m_1k.pth'
     ),
     'tiny_vit_11m_224.dist_in22k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_11m_22k_distill.pth',
+        # url='https://mirror.ghproxy.com/https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_11m_22k_distill.pth',
         num_classes=21841
     ),
     'tiny_vit_11m_224.dist_in22k_ft_in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_11m_22kto1k_distill.pth'
+        # url='https://mirror.ghproxy.com/https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_11m_22kto1k_distill.pth'
     ),
     'tiny_vit_11m_224.in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_11m_1k.pth'
+        # url='https://mirror.ghproxy.com/https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_11m_1k.pth'
     ),
     'tiny_vit_21m_224.dist_in22k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_21m_22k_distill.pth',
+        # url='https://mirror.ghproxy.com/https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_21m_22k_distill.pth',
         num_classes=21841
     ),
     'tiny_vit_21m_224.dist_in22k_ft_in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_21m_22kto1k_distill.pth'
+        # url='https://mirror.ghproxy.com/https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_21m_22kto1k_distill.pth'
     ),
     'tiny_vit_21m_224.in1k': _cfg(
         hf_hub_id='timm/',
-        #url='https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_21m_1k.pth'
+        #url='https://mirror.ghproxy.com/https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_21m_1k.pth'
     ),
     'tiny_vit_21m_384.dist_in22k_ft_in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_21m_22kto1k_384_distill.pth',
+        # url='https://mirror.ghproxy.com/https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_21m_22kto1k_384_distill.pth',
         input_size=(3, 384, 384), pool_size=(12, 12), crop_pct=1.0,
     ),
     'tiny_vit_21m_512.dist_in22k_ft_in1k': _cfg(
         hf_hub_id='timm/',
-        # url='https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_21m_22kto1k_512_distill.pth',
+        # url='https://mirror.ghproxy.com/https://github.com/wkcn/TinyViT-model-zoo/releases/download/checkpoints/tiny_vit_21m_22kto1k_512_distill.pth',
         input_size=(3, 512, 512), pool_size=(16, 16), crop_pct=1.0, crop_mode='squash',
     ),
 })

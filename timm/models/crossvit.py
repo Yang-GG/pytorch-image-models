@@ -9,7 +9,7 @@
 }
 
 Paper link: https://arxiv.org/abs/2103.14899
-Original code: https://github.com/IBM/CrossViT/blob/main/models/crossvit.py
+Original code: https://mirror.ghproxy.com/https://github.com/IBM/CrossViT/blob/main/models/crossvit.py
 
 NOTE: model names have been renamed from originals to represent actual input res all *_224 -> *_240 and *_384 -> *_408
 
@@ -21,7 +21,7 @@ Modifications and additions for timm hacked together by / Copyright 2021, Ross W
 
 
 """
-Modifed from Timm. https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/vision_transformer.py
+Modifed from Timm. https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/vision_transformer.py
 
 """
 from functools import partial

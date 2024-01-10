@@ -4,8 +4,8 @@ Paper:
 V1: `MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer` - https://arxiv.org/abs/2110.02178
 V2: `Separable Self-attention for Mobile Vision Transformers` - https://arxiv.org/abs/2206.02680
 
-MobileVitBlock and checkpoints adapted from https://github.com/apple/ml-cvnets (original copyright below)
-License: https://github.com/apple/ml-cvnets/blob/main/LICENSE (Apple open source)
+MobileVitBlock and checkpoints adapted from https://mirror.ghproxy.com/https://github.com/apple/ml-cvnets (original copyright below)
+License: https://mirror.ghproxy.com/https://github.com/apple/ml-cvnets/blob/main/LICENSE (Apple open source)
 
 Rest of code, ByobNet, and Transformer block hacked together by / Copyright 2022, Ross Wightman
 """
@@ -529,7 +529,7 @@ class MobileVitV2Block(nn.Module):
 
         # Fold (patches -> feature map), [B, C, P, N] --> [B, C, H, W]
         if self.coreml_exportable:
-            # adopted from https://github.com/apple/ml-cvnets/blob/main/cvnets/modules/mobilevit_block.py#L609-L624
+            # adopted from https://mirror.ghproxy.com/https://github.com/apple/ml-cvnets/blob/main/cvnets/modules/mobilevit_block.py#L609-L624
             x = x.reshape(B, C * patch_h * patch_w, num_patch_h, num_patch_w)
             x = F.pixel_shuffle(x, upscale_factor=patch_h)
         else:
