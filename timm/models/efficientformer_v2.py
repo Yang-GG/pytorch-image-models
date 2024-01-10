@@ -8,7 +8,7 @@
     year={2022}
 }
 
-Significantly refactored and cleaned up for timm from original at: https://github.com/snap-research/EfficientFormer
+Significantly refactored and cleaned up for timm from original at: https://mirror.ghproxy.com/https://github.com/snap-research/EfficientFormer
 
 Original code licensed Apache 2.0, Copyright (c) 2022 Snap Inc.
 
