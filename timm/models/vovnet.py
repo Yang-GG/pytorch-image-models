@@ -4,8 +4,8 @@ Papers:
 * `An Energy and GPU-Computation Efficient Backbone Network` - https://arxiv.org/abs/1904.09730
 * `CenterMask : Real-Time Anchor-Free Instance Segmentation` - https://arxiv.org/abs/1911.06667
 
-Looked at  https://github.com/youngwanLEE/vovnet-detectron2 &
-https://github.com/stigma0617/VoVNet.pytorch/blob/master/models_vovnet/vovnet.py
+Looked at  https://mirror.ghproxy.com/https://github.com/youngwanLEE/vovnet-detectron2 &
+https://mirror.ghproxy.com/https://github.com/stigma0617/VoVNet.pytorch/blob/master/models_vovnet/vovnet.py
 for some reference, rewrote most of the code.
 
 Hacked together by / Copyright 2020 Ross Wightman
@@ -267,8 +267,8 @@ class VovNet(nn.Module):
         return x
 
 
-# model cfgs adapted from https://github.com/youngwanLEE/vovnet-detectron2 &
-# https://github.com/stigma0617/VoVNet.pytorch/blob/master/models_vovnet/vovnet.py
+# model cfgs adapted from https://mirror.ghproxy.com/https://github.com/youngwanLEE/vovnet-detectron2 &
+# https://mirror.ghproxy.com/https://github.com/stigma0617/VoVNet.pytorch/blob/master/models_vovnet/vovnet.py
 model_cfgs = dict(
     vovnet39a=dict(
         stem_chs=[64, 64, 128],
