@@ -1,7 +1,7 @@
 """Pytorch impl of Aligned Xception 41, 65, 71
 
 This is a correct, from scratch impl of Aligned Xception (Deeplab) models compatible with TF weights at
-https://github.com/tensorflow/models/blob/master/research/deeplab/g3doc/model_zoo.md
+https://mirror.ghproxy.com/https://github.com/tensorflow/models/blob/master/research/deeplab/g3doc/model_zoo.md
 
 Hacked together by / Copyright 2020 Ross Wightman
 """
