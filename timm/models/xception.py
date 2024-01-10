@@ -1,5 +1,5 @@
 """
-Ported to pytorch thanks to [tstandley](https://github.com/tstandley/Xception-PyTorch)
+Ported to pytorch thanks to [tstandley](https://mirror.ghproxy.com/https://github.com/tstandley/Xception-PyTorch)
 
 @author: tstandley
 Adapted by cadene
@@ -230,7 +230,7 @@ def _xception(variant, pretrained=False, **kwargs):
 
 default_cfgs = generate_default_cfgs({
     'legacy_xception.tf_in1k': {
-        'url': 'https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-cadene/xception-43020ad28.pth',
+        'url': 'https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-cadene/xception-43020ad28.pth',
         'input_size': (3, 299, 299),
         'pool_size': (10, 10),
         'crop_pct': 0.8975,
