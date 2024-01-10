@@ -1,10 +1,10 @@
-""" Cross-Covariance Image Transformer (XCiT) in PyTorch
+ """ Cross-Covariance Image Transformer (XCiT) in PyTorch
 
 Paper:
     - https://arxiv.org/abs/2106.09681
 
 Same as the official implementation, with some minor adaptations, original copyright below
-    - https://github.com/facebookresearch/xcit/blob/master/xcit.py
+    - https://mirror.ghproxy.com/https://github.com/facebookresearch/xcit/blob/master/xcit.py
 
 Modifications and additions for timm hacked together by / Copyright 2021, Ross Wightman
 """
@@ -34,7 +34,7 @@ class PositionalEncodingFourier(nn.Module):
     """
     Positional encoding relying on a fourier kernel matching the one used in the "Attention is all you Need" paper.
     Based on the official XCiT code
-        - https://github.com/facebookresearch/xcit/blob/master/xcit.py
+        - https://mirror.ghproxy.com/https://github.com/facebookresearch/xcit/blob/master/xcit.py
     """
 
     def __init__(self, hidden_dim=32, dim=768, temperature=10000):
@@ -174,7 +174,7 @@ class ClassAttentionBlock(nn.Module):
         else:
             self.gamma1, self.gamma2 = 1.0, 1.0
 
-        # See https://github.com/rwightman/pytorch-image-models/pull/747#issuecomment-877795721
+        # See https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/pull/747#issuecomment-877795721
         self.tokens_norm = tokens_norm
 
     def forward(self, x):
@@ -264,7 +264,7 @@ class XCABlock(nn.Module):
     def forward(self, x, H: int, W: int):
         x = x + self.drop_path(self.gamma1 * self.attn(self.norm1(x)))
         # NOTE official code has 3 then 2, so keeping it the same to be consistent with loaded weights
-        # See https://github.com/rwightman/pytorch-image-models/pull/747#issuecomment-877795721
+        # See https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/pull/747#issuecomment-877795721
         x = x + self.drop_path(self.gamma3 * self.local_mp(self.norm3(x), H, W))
         x = x + self.drop_path(self.gamma2 * self.mlp(self.norm2(x)))
         return x
@@ -273,8 +273,8 @@ class XCABlock(nn.Module):
 class Xcit(nn.Module):
     """
     Based on timm and DeiT code bases
-    https://github.com/rwightman/pytorch-image-models/tree/master/timm
-    https://github.com/facebookresearch/deit/
+    https://mirror.ghproxy.com/https://github.com/rwightman/pytorch-image-models/tree/master/timm
+    https://mirror.ghproxy.com/https://github.com/facebookresearch/deit/
     """
 
     def __init__(
